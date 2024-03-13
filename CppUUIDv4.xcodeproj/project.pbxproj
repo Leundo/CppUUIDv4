@@ -8,11 +8,519 @@
 
 /* Begin PBXBuildFile section */
 		713F55172BA20E28003FF632 /* CppUUIDv4.h in Headers */ = {isa = PBXBuildFile; fileRef = 713F55162BA20E28003FF632 /* CppUUIDv4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713F55202BA20E69003FF632 /* uuidv4_endianness.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 713F551D2BA20E69003FF632 /* uuidv4_endianness.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		713F55212BA20E69003FF632 /* uuidv4_uuid.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 713F551E2BA20E69003FF632 /* uuidv4_uuid.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		713F570A2BA20E7C003FF632 /* CppSimde.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713F55262BA20E6E003FF632 /* CppSimde.xcframework */; };
+		713F570B2BA20E7C003FF632 /* CppSimde.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 713F55262BA20E6E003FF632 /* CppSimde.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		713F57082BA20E6E003FF632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713F57022BA20E6E003FF632 /* CppSimde.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 713F504C2BA200A1003FF632;
+			remoteInfo = CppSimde;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		713F570C2BA20E7C003FF632 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				713F570B2BA20E7C003FF632 /* CppSimde.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		713F55132BA20E28003FF632 /* CppUUIDv4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CppUUIDv4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		713F55162BA20E28003FF632 /* CppUUIDv4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppUUIDv4.h; sourceTree = "<group>"; };
+		713F551D2BA20E69003FF632 /* uuidv4_endianness.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = uuidv4_endianness.hpp; sourceTree = "<group>"; };
+		713F551E2BA20E69003FF632 /* uuidv4_uuid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = uuidv4_uuid.hpp; sourceTree = "<group>"; };
+		713F55232BA20E6E003FF632 /* CppSimde-iOS.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "CppSimde-iOS.xcarchive"; sourceTree = "<group>"; };
+		713F55242BA20E6E003FF632 /* CppSimde-OSX.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "CppSimde-OSX.xcarchive"; sourceTree = "<group>"; };
+		713F55252BA20E6E003FF632 /* CppSimde-Sim.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "CppSimde-Sim.xcarchive"; sourceTree = "<group>"; };
+		713F55262BA20E6E003FF632 /* CppSimde.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CppSimde.xcframework; sourceTree = "<group>"; };
+		713F55282BA20E6E003FF632 /* simde_arm_neon_aba.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_aba.hpp; sourceTree = "<group>"; };
+		713F55292BA20E6E003FF632 /* simde_arm_neon_abal_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_abal_high.hpp; sourceTree = "<group>"; };
+		713F552A2BA20E6E003FF632 /* simde_arm_neon_abal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_abal.hpp; sourceTree = "<group>"; };
+		713F552B2BA20E6E003FF632 /* simde_arm_neon_abd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_abd.hpp; sourceTree = "<group>"; };
+		713F552C2BA20E6E003FF632 /* simde_arm_neon_abdl_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_abdl_high.hpp; sourceTree = "<group>"; };
+		713F552D2BA20E6E003FF632 /* simde_arm_neon_abdl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_abdl.hpp; sourceTree = "<group>"; };
+		713F552E2BA20E6E003FF632 /* simde_arm_neon_abs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_abs.hpp; sourceTree = "<group>"; };
+		713F552F2BA20E6E003FF632 /* simde_arm_neon_add.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_add.hpp; sourceTree = "<group>"; };
+		713F55302BA20E6E003FF632 /* simde_arm_neon_addhn_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addhn_high.hpp; sourceTree = "<group>"; };
+		713F55312BA20E6E003FF632 /* simde_arm_neon_addhn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addhn.hpp; sourceTree = "<group>"; };
+		713F55322BA20E6E003FF632 /* simde_arm_neon_addl_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addl_high.hpp; sourceTree = "<group>"; };
+		713F55332BA20E6E003FF632 /* simde_arm_neon_addl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addl.hpp; sourceTree = "<group>"; };
+		713F55342BA20E6E003FF632 /* simde_arm_neon_addlv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addlv.hpp; sourceTree = "<group>"; };
+		713F55352BA20E6E003FF632 /* simde_arm_neon_addv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addv.hpp; sourceTree = "<group>"; };
+		713F55362BA20E6E003FF632 /* simde_arm_neon_addw_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addw_high.hpp; sourceTree = "<group>"; };
+		713F55372BA20E6E003FF632 /* simde_arm_neon_addw.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_addw.hpp; sourceTree = "<group>"; };
+		713F55382BA20E6E003FF632 /* simde_arm_neon_aes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_aes.hpp; sourceTree = "<group>"; };
+		713F55392BA20E6E003FF632 /* simde_arm_neon_and.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_and.hpp; sourceTree = "<group>"; };
+		713F553A2BA20E6E003FF632 /* simde_arm_neon_bcax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_bcax.hpp; sourceTree = "<group>"; };
+		713F553B2BA20E6E003FF632 /* simde_arm_neon_bic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_bic.hpp; sourceTree = "<group>"; };
+		713F553C2BA20E6E003FF632 /* simde_arm_neon_bsl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_bsl.hpp; sourceTree = "<group>"; };
+		713F553D2BA20E6E003FF632 /* simde_arm_neon_cadd_rot90.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cadd_rot90.hpp; sourceTree = "<group>"; };
+		713F553E2BA20E6E003FF632 /* simde_arm_neon_cadd_rot270.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cadd_rot270.hpp; sourceTree = "<group>"; };
+		713F553F2BA20E6E003FF632 /* simde_arm_neon_cage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cage.hpp; sourceTree = "<group>"; };
+		713F55402BA20E6E003FF632 /* simde_arm_neon_cagt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cagt.hpp; sourceTree = "<group>"; };
+		713F55412BA20E6E003FF632 /* simde_arm_neon_cale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cale.hpp; sourceTree = "<group>"; };
+		713F55422BA20E6E003FF632 /* simde_arm_neon_calt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_calt.hpp; sourceTree = "<group>"; };
+		713F55432BA20E6E003FF632 /* simde_arm_neon_ceq.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ceq.hpp; sourceTree = "<group>"; };
+		713F55442BA20E6E003FF632 /* simde_arm_neon_ceqz.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ceqz.hpp; sourceTree = "<group>"; };
+		713F55452BA20E6E003FF632 /* simde_arm_neon_cge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cge.hpp; sourceTree = "<group>"; };
+		713F55462BA20E6E003FF632 /* simde_arm_neon_cgez.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cgez.hpp; sourceTree = "<group>"; };
+		713F55472BA20E6E003FF632 /* simde_arm_neon_cgt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cgt.hpp; sourceTree = "<group>"; };
+		713F55482BA20E6E003FF632 /* simde_arm_neon_cgtz.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cgtz.hpp; sourceTree = "<group>"; };
+		713F55492BA20E6E003FF632 /* simde_arm_neon_cle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cle.hpp; sourceTree = "<group>"; };
+		713F554A2BA20E6E003FF632 /* simde_arm_neon_clez.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_clez.hpp; sourceTree = "<group>"; };
+		713F554B2BA20E6E003FF632 /* simde_arm_neon_cls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cls.hpp; sourceTree = "<group>"; };
+		713F554C2BA20E6E003FF632 /* simde_arm_neon_clt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_clt.hpp; sourceTree = "<group>"; };
+		713F554D2BA20E6E003FF632 /* simde_arm_neon_cltz.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cltz.hpp; sourceTree = "<group>"; };
+		713F554E2BA20E6E003FF632 /* simde_arm_neon_clz.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_clz.hpp; sourceTree = "<group>"; };
+		713F554F2BA20E6E003FF632 /* simde_arm_neon_cmla_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla_lane.hpp; sourceTree = "<group>"; };
+		713F55502BA20E6E003FF632 /* simde_arm_neon_cmla_rot90_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla_rot90_lane.hpp; sourceTree = "<group>"; };
+		713F55512BA20E6E003FF632 /* simde_arm_neon_cmla_rot90.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla_rot90.hpp; sourceTree = "<group>"; };
+		713F55522BA20E6E003FF632 /* simde_arm_neon_cmla_rot180_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla_rot180_lane.hpp; sourceTree = "<group>"; };
+		713F55532BA20E6E003FF632 /* simde_arm_neon_cmla_rot180.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla_rot180.hpp; sourceTree = "<group>"; };
+		713F55542BA20E6E003FF632 /* simde_arm_neon_cmla_rot270_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla_rot270_lane.hpp; sourceTree = "<group>"; };
+		713F55552BA20E6E003FF632 /* simde_arm_neon_cmla_rot270.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla_rot270.hpp; sourceTree = "<group>"; };
+		713F55562BA20E6E003FF632 /* simde_arm_neon_cmla.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cmla.hpp; sourceTree = "<group>"; };
+		713F55572BA20E6E003FF632 /* simde_arm_neon_cnt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cnt.hpp; sourceTree = "<group>"; };
+		713F55582BA20E6E003FF632 /* simde_arm_neon_combine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_combine.hpp; sourceTree = "<group>"; };
+		713F55592BA20E6E003FF632 /* simde_arm_neon_copy_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_copy_lane.hpp; sourceTree = "<group>"; };
+		713F555A2BA20E6E003FF632 /* simde_arm_neon_crc32.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_crc32.hpp; sourceTree = "<group>"; };
+		713F555B2BA20E6E003FF632 /* simde_arm_neon_create.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_create.hpp; sourceTree = "<group>"; };
+		713F555C2BA20E6E003FF632 /* simde_arm_neon_cvt_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cvt_n.hpp; sourceTree = "<group>"; };
+		713F555D2BA20E6E003FF632 /* simde_arm_neon_cvt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cvt.hpp; sourceTree = "<group>"; };
+		713F555E2BA20E6E003FF632 /* simde_arm_neon_cvtm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cvtm.hpp; sourceTree = "<group>"; };
+		713F555F2BA20E6E003FF632 /* simde_arm_neon_cvtn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cvtn.hpp; sourceTree = "<group>"; };
+		713F55602BA20E6E003FF632 /* simde_arm_neon_cvtp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_cvtp.hpp; sourceTree = "<group>"; };
+		713F55612BA20E6E003FF632 /* simde_arm_neon_div.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_div.hpp; sourceTree = "<group>"; };
+		713F55622BA20E6E003FF632 /* simde_arm_neon_dot_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_dot_lane.hpp; sourceTree = "<group>"; };
+		713F55632BA20E6E003FF632 /* simde_arm_neon_dot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_dot.hpp; sourceTree = "<group>"; };
+		713F55642BA20E6E003FF632 /* simde_arm_neon_dup_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_dup_lane.hpp; sourceTree = "<group>"; };
+		713F55652BA20E6E003FF632 /* simde_arm_neon_dup_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_dup_n.hpp; sourceTree = "<group>"; };
+		713F55662BA20E6E003FF632 /* simde_arm_neon_eor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_eor.hpp; sourceTree = "<group>"; };
+		713F55672BA20E6E003FF632 /* simde_arm_neon_ext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ext.hpp; sourceTree = "<group>"; };
+		713F55682BA20E6E003FF632 /* simde_arm_neon_fma_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fma_lane.hpp; sourceTree = "<group>"; };
+		713F55692BA20E6E003FF632 /* simde_arm_neon_fma_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fma_n.hpp; sourceTree = "<group>"; };
+		713F556A2BA20E6E003FF632 /* simde_arm_neon_fma.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fma.hpp; sourceTree = "<group>"; };
+		713F556B2BA20E6E003FF632 /* simde_arm_neon_fmlal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fmlal.hpp; sourceTree = "<group>"; };
+		713F556C2BA20E6E003FF632 /* simde_arm_neon_fmlsl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fmlsl.hpp; sourceTree = "<group>"; };
+		713F556D2BA20E6E003FF632 /* simde_arm_neon_fms_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fms_lane.hpp; sourceTree = "<group>"; };
+		713F556E2BA20E6E003FF632 /* simde_arm_neon_fms_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fms_n.hpp; sourceTree = "<group>"; };
+		713F556F2BA20E6E003FF632 /* simde_arm_neon_fms.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_fms.hpp; sourceTree = "<group>"; };
+		713F55702BA20E6E003FF632 /* simde_arm_neon_get_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_get_high.hpp; sourceTree = "<group>"; };
+		713F55712BA20E6E003FF632 /* simde_arm_neon_get_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_get_lane.hpp; sourceTree = "<group>"; };
+		713F55722BA20E6E003FF632 /* simde_arm_neon_get_low.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_get_low.hpp; sourceTree = "<group>"; };
+		713F55732BA20E6E003FF632 /* simde_arm_neon_hadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_hadd.hpp; sourceTree = "<group>"; };
+		713F55742BA20E6E003FF632 /* simde_arm_neon_hsub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_hsub.hpp; sourceTree = "<group>"; };
+		713F55752BA20E6E003FF632 /* simde_arm_neon_ld1_dup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1_dup.hpp; sourceTree = "<group>"; };
+		713F55762BA20E6E003FF632 /* simde_arm_neon_ld1_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1_lane.hpp; sourceTree = "<group>"; };
+		713F55772BA20E6E003FF632 /* simde_arm_neon_ld1_x2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1_x2.hpp; sourceTree = "<group>"; };
+		713F55782BA20E6E003FF632 /* simde_arm_neon_ld1_x3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1_x3.hpp; sourceTree = "<group>"; };
+		713F55792BA20E6E003FF632 /* simde_arm_neon_ld1_x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1_x4.hpp; sourceTree = "<group>"; };
+		713F557A2BA20E6E003FF632 /* simde_arm_neon_ld1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1.hpp; sourceTree = "<group>"; };
+		713F557B2BA20E6E003FF632 /* simde_arm_neon_ld1q_x2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1q_x2.hpp; sourceTree = "<group>"; };
+		713F557C2BA20E6E003FF632 /* simde_arm_neon_ld1q_x3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1q_x3.hpp; sourceTree = "<group>"; };
+		713F557D2BA20E6E003FF632 /* simde_arm_neon_ld1q_x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld1q_x4.hpp; sourceTree = "<group>"; };
+		713F557E2BA20E6E003FF632 /* simde_arm_neon_ld2_dup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld2_dup.hpp; sourceTree = "<group>"; };
+		713F557F2BA20E6E003FF632 /* simde_arm_neon_ld2_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld2_lane.hpp; sourceTree = "<group>"; };
+		713F55802BA20E6E003FF632 /* simde_arm_neon_ld2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld2.hpp; sourceTree = "<group>"; };
+		713F55812BA20E6E003FF632 /* simde_arm_neon_ld3_dup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld3_dup.hpp; sourceTree = "<group>"; };
+		713F55822BA20E6E003FF632 /* simde_arm_neon_ld3_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld3_lane.hpp; sourceTree = "<group>"; };
+		713F55832BA20E6E003FF632 /* simde_arm_neon_ld3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld3.hpp; sourceTree = "<group>"; };
+		713F55842BA20E6E003FF632 /* simde_arm_neon_ld4_dup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld4_dup.hpp; sourceTree = "<group>"; };
+		713F55852BA20E6E003FF632 /* simde_arm_neon_ld4_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld4_lane.hpp; sourceTree = "<group>"; };
+		713F55862BA20E6E003FF632 /* simde_arm_neon_ld4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_ld4.hpp; sourceTree = "<group>"; };
+		713F55872BA20E6E003FF632 /* simde_arm_neon_max.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_max.hpp; sourceTree = "<group>"; };
+		713F55882BA20E6E003FF632 /* simde_arm_neon_maxnm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_maxnm.hpp; sourceTree = "<group>"; };
+		713F55892BA20E6E003FF632 /* simde_arm_neon_maxnmv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_maxnmv.hpp; sourceTree = "<group>"; };
+		713F558A2BA20E6E003FF632 /* simde_arm_neon_maxv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_maxv.hpp; sourceTree = "<group>"; };
+		713F558B2BA20E6E003FF632 /* simde_arm_neon_min.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_min.hpp; sourceTree = "<group>"; };
+		713F558C2BA20E6E003FF632 /* simde_arm_neon_minnm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_minnm.hpp; sourceTree = "<group>"; };
+		713F558D2BA20E6E003FF632 /* simde_arm_neon_minnmv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_minnmv.hpp; sourceTree = "<group>"; };
+		713F558E2BA20E6E003FF632 /* simde_arm_neon_minv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_minv.hpp; sourceTree = "<group>"; };
+		713F558F2BA20E6E003FF632 /* simde_arm_neon_mla_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mla_lane.hpp; sourceTree = "<group>"; };
+		713F55902BA20E6E003FF632 /* simde_arm_neon_mla_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mla_n.hpp; sourceTree = "<group>"; };
+		713F55912BA20E6E003FF632 /* simde_arm_neon_mla.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mla.hpp; sourceTree = "<group>"; };
+		713F55922BA20E6E003FF632 /* simde_arm_neon_mlal_high_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlal_high_lane.hpp; sourceTree = "<group>"; };
+		713F55932BA20E6E003FF632 /* simde_arm_neon_mlal_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlal_high_n.hpp; sourceTree = "<group>"; };
+		713F55942BA20E6E003FF632 /* simde_arm_neon_mlal_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlal_high.hpp; sourceTree = "<group>"; };
+		713F55952BA20E6E003FF632 /* simde_arm_neon_mlal_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlal_lane.hpp; sourceTree = "<group>"; };
+		713F55962BA20E6E003FF632 /* simde_arm_neon_mlal_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlal_n.hpp; sourceTree = "<group>"; };
+		713F55972BA20E6E003FF632 /* simde_arm_neon_mlal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlal.hpp; sourceTree = "<group>"; };
+		713F55982BA20E6E003FF632 /* simde_arm_neon_mls_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mls_lane.hpp; sourceTree = "<group>"; };
+		713F55992BA20E6E003FF632 /* simde_arm_neon_mls_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mls_n.hpp; sourceTree = "<group>"; };
+		713F559A2BA20E6E003FF632 /* simde_arm_neon_mls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mls.hpp; sourceTree = "<group>"; };
+		713F559B2BA20E6E003FF632 /* simde_arm_neon_mlsl_high_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlsl_high_lane.hpp; sourceTree = "<group>"; };
+		713F559C2BA20E6E003FF632 /* simde_arm_neon_mlsl_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlsl_high_n.hpp; sourceTree = "<group>"; };
+		713F559D2BA20E6E003FF632 /* simde_arm_neon_mlsl_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlsl_high.hpp; sourceTree = "<group>"; };
+		713F559E2BA20E6E003FF632 /* simde_arm_neon_mlsl_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlsl_lane.hpp; sourceTree = "<group>"; };
+		713F559F2BA20E6E003FF632 /* simde_arm_neon_mlsl_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlsl_n.hpp; sourceTree = "<group>"; };
+		713F55A02BA20E6E003FF632 /* simde_arm_neon_mlsl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mlsl.hpp; sourceTree = "<group>"; };
+		713F55A12BA20E6E003FF632 /* simde_arm_neon_mmlaq.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mmlaq.hpp; sourceTree = "<group>"; };
+		713F55A22BA20E6E003FF632 /* simde_arm_neon_movl_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_movl_high.hpp; sourceTree = "<group>"; };
+		713F55A32BA20E6E003FF632 /* simde_arm_neon_movl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_movl.hpp; sourceTree = "<group>"; };
+		713F55A42BA20E6E003FF632 /* simde_arm_neon_movn_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_movn_high.hpp; sourceTree = "<group>"; };
+		713F55A52BA20E6E003FF632 /* simde_arm_neon_movn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_movn.hpp; sourceTree = "<group>"; };
+		713F55A62BA20E6E003FF632 /* simde_arm_neon_mul_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mul_lane.hpp; sourceTree = "<group>"; };
+		713F55A72BA20E6E003FF632 /* simde_arm_neon_mul_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mul_n.hpp; sourceTree = "<group>"; };
+		713F55A82BA20E6E003FF632 /* simde_arm_neon_mul.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mul.hpp; sourceTree = "<group>"; };
+		713F55A92BA20E6E003FF632 /* simde_arm_neon_mull_high_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mull_high_lane.hpp; sourceTree = "<group>"; };
+		713F55AA2BA20E6E003FF632 /* simde_arm_neon_mull_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mull_high_n.hpp; sourceTree = "<group>"; };
+		713F55AB2BA20E6E003FF632 /* simde_arm_neon_mull_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mull_high.hpp; sourceTree = "<group>"; };
+		713F55AC2BA20E6E003FF632 /* simde_arm_neon_mull_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mull_lane.hpp; sourceTree = "<group>"; };
+		713F55AD2BA20E6E003FF632 /* simde_arm_neon_mull_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mull_n.hpp; sourceTree = "<group>"; };
+		713F55AE2BA20E6E003FF632 /* simde_arm_neon_mull.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mull.hpp; sourceTree = "<group>"; };
+		713F55AF2BA20E6E003FF632 /* simde_arm_neon_mulx_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mulx_lane.hpp; sourceTree = "<group>"; };
+		713F55B02BA20E6E003FF632 /* simde_arm_neon_mulx_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mulx_n.hpp; sourceTree = "<group>"; };
+		713F55B12BA20E6E003FF632 /* simde_arm_neon_mulx.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mulx.hpp; sourceTree = "<group>"; };
+		713F55B22BA20E6E003FF632 /* simde_arm_neon_mvn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_mvn.hpp; sourceTree = "<group>"; };
+		713F55B32BA20E6E003FF632 /* simde_arm_neon_neg.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_neg.hpp; sourceTree = "<group>"; };
+		713F55B42BA20E6E003FF632 /* simde_arm_neon_orn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_orn.hpp; sourceTree = "<group>"; };
+		713F55B52BA20E6E003FF632 /* simde_arm_neon_orr.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_orr.hpp; sourceTree = "<group>"; };
+		713F55B62BA20E6E003FF632 /* simde_arm_neon_padal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_padal.hpp; sourceTree = "<group>"; };
+		713F55B72BA20E6E003FF632 /* simde_arm_neon_padd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_padd.hpp; sourceTree = "<group>"; };
+		713F55B82BA20E6E003FF632 /* simde_arm_neon_paddl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_paddl.hpp; sourceTree = "<group>"; };
+		713F55B92BA20E6E003FF632 /* simde_arm_neon_pmax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_pmax.hpp; sourceTree = "<group>"; };
+		713F55BA2BA20E6E003FF632 /* simde_arm_neon_pmaxnm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_pmaxnm.hpp; sourceTree = "<group>"; };
+		713F55BB2BA20E6E003FF632 /* simde_arm_neon_pmin.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_pmin.hpp; sourceTree = "<group>"; };
+		713F55BC2BA20E6E003FF632 /* simde_arm_neon_pminnm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_pminnm.hpp; sourceTree = "<group>"; };
+		713F55BD2BA20E6E003FF632 /* simde_arm_neon_qabs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qabs.hpp; sourceTree = "<group>"; };
+		713F55BE2BA20E6E003FF632 /* simde_arm_neon_qadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qadd.hpp; sourceTree = "<group>"; };
+		713F55BF2BA20E6E003FF632 /* simde_arm_neon_qdmlal_high_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlal_high_lane.hpp; sourceTree = "<group>"; };
+		713F55C02BA20E6E003FF632 /* simde_arm_neon_qdmlal_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlal_high_n.hpp; sourceTree = "<group>"; };
+		713F55C12BA20E6E003FF632 /* simde_arm_neon_qdmlal_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlal_high.hpp; sourceTree = "<group>"; };
+		713F55C22BA20E6E003FF632 /* simde_arm_neon_qdmlal_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlal_lane.hpp; sourceTree = "<group>"; };
+		713F55C32BA20E6E003FF632 /* simde_arm_neon_qdmlal_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlal_n.hpp; sourceTree = "<group>"; };
+		713F55C42BA20E6E003FF632 /* simde_arm_neon_qdmlal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlal.hpp; sourceTree = "<group>"; };
+		713F55C52BA20E6E003FF632 /* simde_arm_neon_qdmlsl_high_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlsl_high_lane.hpp; sourceTree = "<group>"; };
+		713F55C62BA20E6E003FF632 /* simde_arm_neon_qdmlsl_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlsl_high_n.hpp; sourceTree = "<group>"; };
+		713F55C72BA20E6E003FF632 /* simde_arm_neon_qdmlsl_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlsl_high.hpp; sourceTree = "<group>"; };
+		713F55C82BA20E6E003FF632 /* simde_arm_neon_qdmlsl_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlsl_lane.hpp; sourceTree = "<group>"; };
+		713F55C92BA20E6E003FF632 /* simde_arm_neon_qdmlsl_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlsl_n.hpp; sourceTree = "<group>"; };
+		713F55CA2BA20E6E003FF632 /* simde_arm_neon_qdmlsl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmlsl.hpp; sourceTree = "<group>"; };
+		713F55CB2BA20E6E003FF632 /* simde_arm_neon_qdmulh_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmulh_lane.hpp; sourceTree = "<group>"; };
+		713F55CC2BA20E6E003FF632 /* simde_arm_neon_qdmulh_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmulh_n.hpp; sourceTree = "<group>"; };
+		713F55CD2BA20E6E003FF632 /* simde_arm_neon_qdmulh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmulh.hpp; sourceTree = "<group>"; };
+		713F55CE2BA20E6E003FF632 /* simde_arm_neon_qdmull_high_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmull_high_lane.hpp; sourceTree = "<group>"; };
+		713F55CF2BA20E6E003FF632 /* simde_arm_neon_qdmull_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmull_high_n.hpp; sourceTree = "<group>"; };
+		713F55D02BA20E6E003FF632 /* simde_arm_neon_qdmull_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmull_high.hpp; sourceTree = "<group>"; };
+		713F55D12BA20E6E003FF632 /* simde_arm_neon_qdmull_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmull_lane.hpp; sourceTree = "<group>"; };
+		713F55D22BA20E6E003FF632 /* simde_arm_neon_qdmull_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmull_n.hpp; sourceTree = "<group>"; };
+		713F55D32BA20E6E003FF632 /* simde_arm_neon_qdmull.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qdmull.hpp; sourceTree = "<group>"; };
+		713F55D42BA20E6E003FF632 /* simde_arm_neon_qmovn_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qmovn_high.hpp; sourceTree = "<group>"; };
+		713F55D52BA20E6E003FF632 /* simde_arm_neon_qmovn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qmovn.hpp; sourceTree = "<group>"; };
+		713F55D62BA20E6E003FF632 /* simde_arm_neon_qmovun_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qmovun_high.hpp; sourceTree = "<group>"; };
+		713F55D72BA20E6E003FF632 /* simde_arm_neon_qmovun.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qmovun.hpp; sourceTree = "<group>"; };
+		713F55D82BA20E6E003FF632 /* simde_arm_neon_qneg.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qneg.hpp; sourceTree = "<group>"; };
+		713F55D92BA20E6E003FF632 /* simde_arm_neon_qrdmlah_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrdmlah_lane.hpp; sourceTree = "<group>"; };
+		713F55DA2BA20E6E003FF632 /* simde_arm_neon_qrdmlah.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrdmlah.hpp; sourceTree = "<group>"; };
+		713F55DB2BA20E6E003FF632 /* simde_arm_neon_qrdmlsh_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrdmlsh_lane.hpp; sourceTree = "<group>"; };
+		713F55DC2BA20E6E003FF632 /* simde_arm_neon_qrdmlsh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrdmlsh.hpp; sourceTree = "<group>"; };
+		713F55DD2BA20E6E003FF632 /* simde_arm_neon_qrdmulh_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrdmulh_lane.hpp; sourceTree = "<group>"; };
+		713F55DE2BA20E6E003FF632 /* simde_arm_neon_qrdmulh_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrdmulh_n.hpp; sourceTree = "<group>"; };
+		713F55DF2BA20E6E003FF632 /* simde_arm_neon_qrdmulh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrdmulh.hpp; sourceTree = "<group>"; };
+		713F55E02BA20E6E003FF632 /* simde_arm_neon_qrshl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrshl.hpp; sourceTree = "<group>"; };
+		713F55E12BA20E6E003FF632 /* simde_arm_neon_qrshrn_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrshrn_high_n.hpp; sourceTree = "<group>"; };
+		713F55E22BA20E6E003FF632 /* simde_arm_neon_qrshrn_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrshrn_n.hpp; sourceTree = "<group>"; };
+		713F55E32BA20E6E003FF632 /* simde_arm_neon_qrshrun_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrshrun_high_n.hpp; sourceTree = "<group>"; };
+		713F55E42BA20E6E003FF632 /* simde_arm_neon_qrshrun_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qrshrun_n.hpp; sourceTree = "<group>"; };
+		713F55E52BA20E6E003FF632 /* simde_arm_neon_qshl_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qshl_n.hpp; sourceTree = "<group>"; };
+		713F55E62BA20E6E003FF632 /* simde_arm_neon_qshl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qshl.hpp; sourceTree = "<group>"; };
+		713F55E72BA20E6E003FF632 /* simde_arm_neon_qshlu_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qshlu_n.hpp; sourceTree = "<group>"; };
+		713F55E82BA20E6E003FF632 /* simde_arm_neon_qshrn_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qshrn_high_n.hpp; sourceTree = "<group>"; };
+		713F55E92BA20E6E003FF632 /* simde_arm_neon_qshrn_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qshrn_n.hpp; sourceTree = "<group>"; };
+		713F55EA2BA20E6E003FF632 /* simde_arm_neon_qshrun_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qshrun_high_n.hpp; sourceTree = "<group>"; };
+		713F55EB2BA20E6E003FF632 /* simde_arm_neon_qshrun_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qshrun_n.hpp; sourceTree = "<group>"; };
+		713F55EC2BA20E6E003FF632 /* simde_arm_neon_qsub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qsub.hpp; sourceTree = "<group>"; };
+		713F55ED2BA20E6E003FF632 /* simde_arm_neon_qtbl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qtbl.hpp; sourceTree = "<group>"; };
+		713F55EE2BA20E6E003FF632 /* simde_arm_neon_qtbx.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_qtbx.hpp; sourceTree = "<group>"; };
+		713F55EF2BA20E6E003FF632 /* simde_arm_neon_raddhn_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_raddhn_high.hpp; sourceTree = "<group>"; };
+		713F55F02BA20E6E003FF632 /* simde_arm_neon_raddhn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_raddhn.hpp; sourceTree = "<group>"; };
+		713F55F12BA20E6E003FF632 /* simde_arm_neon_rax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rax.hpp; sourceTree = "<group>"; };
+		713F55F22BA20E6E003FF632 /* simde_arm_neon_rbit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rbit.hpp; sourceTree = "<group>"; };
+		713F55F32BA20E6E003FF632 /* simde_arm_neon_recpe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_recpe.hpp; sourceTree = "<group>"; };
+		713F55F42BA20E6E003FF632 /* simde_arm_neon_recps.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_recps.hpp; sourceTree = "<group>"; };
+		713F55F52BA20E6E003FF632 /* simde_arm_neon_recpx.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_recpx.hpp; sourceTree = "<group>"; };
+		713F55F62BA20E6E003FF632 /* simde_arm_neon_reinterpret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_reinterpret.hpp; sourceTree = "<group>"; };
+		713F55F72BA20E6E003FF632 /* simde_arm_neon_rev16.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rev16.hpp; sourceTree = "<group>"; };
+		713F55F82BA20E6E003FF632 /* simde_arm_neon_rev32.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rev32.hpp; sourceTree = "<group>"; };
+		713F55F92BA20E6E003FF632 /* simde_arm_neon_rev64.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rev64.hpp; sourceTree = "<group>"; };
+		713F55FA2BA20E6E003FF632 /* simde_arm_neon_rhadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rhadd.hpp; sourceTree = "<group>"; };
+		713F55FB2BA20E6E003FF632 /* simde_arm_neon_rnd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rnd.hpp; sourceTree = "<group>"; };
+		713F55FC2BA20E6E003FF632 /* simde_arm_neon_rnd32x.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rnd32x.hpp; sourceTree = "<group>"; };
+		713F55FD2BA20E6E003FF632 /* simde_arm_neon_rnd32z.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rnd32z.hpp; sourceTree = "<group>"; };
+		713F55FE2BA20E6E003FF632 /* simde_arm_neon_rnd64x.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rnd64x.hpp; sourceTree = "<group>"; };
+		713F55FF2BA20E6E003FF632 /* simde_arm_neon_rnd64z.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rnd64z.hpp; sourceTree = "<group>"; };
+		713F56002BA20E6E003FF632 /* simde_arm_neon_rnda.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rnda.hpp; sourceTree = "<group>"; };
+		713F56012BA20E6E003FF632 /* simde_arm_neon_rndi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rndi.hpp; sourceTree = "<group>"; };
+		713F56022BA20E6E003FF632 /* simde_arm_neon_rndm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rndm.hpp; sourceTree = "<group>"; };
+		713F56032BA20E6E003FF632 /* simde_arm_neon_rndn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rndn.hpp; sourceTree = "<group>"; };
+		713F56042BA20E6E003FF632 /* simde_arm_neon_rndp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rndp.hpp; sourceTree = "<group>"; };
+		713F56052BA20E6E003FF632 /* simde_arm_neon_rndx.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rndx.hpp; sourceTree = "<group>"; };
+		713F56062BA20E6E003FF632 /* simde_arm_neon_rshl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rshl.hpp; sourceTree = "<group>"; };
+		713F56072BA20E6E003FF632 /* simde_arm_neon_rshr_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rshr_n.hpp; sourceTree = "<group>"; };
+		713F56082BA20E6E003FF632 /* simde_arm_neon_rshrn_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rshrn_high_n.hpp; sourceTree = "<group>"; };
+		713F56092BA20E6E003FF632 /* simde_arm_neon_rshrn_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rshrn_n.hpp; sourceTree = "<group>"; };
+		713F560A2BA20E6E003FF632 /* simde_arm_neon_rsqrte.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rsqrte.hpp; sourceTree = "<group>"; };
+		713F560B2BA20E6E003FF632 /* simde_arm_neon_rsqrts.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rsqrts.hpp; sourceTree = "<group>"; };
+		713F560C2BA20E6E003FF632 /* simde_arm_neon_rsra_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rsra_n.hpp; sourceTree = "<group>"; };
+		713F560D2BA20E6E003FF632 /* simde_arm_neon_rsubhn_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rsubhn_high.hpp; sourceTree = "<group>"; };
+		713F560E2BA20E6E003FF632 /* simde_arm_neon_rsubhn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_rsubhn.hpp; sourceTree = "<group>"; };
+		713F560F2BA20E6E003FF632 /* simde_arm_neon_set_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_set_lane.hpp; sourceTree = "<group>"; };
+		713F56102BA20E6E003FF632 /* simde_arm_neon_sha1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sha1.hpp; sourceTree = "<group>"; };
+		713F56112BA20E6E003FF632 /* simde_arm_neon_sha256.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sha256.hpp; sourceTree = "<group>"; };
+		713F56122BA20E6E003FF632 /* simde_arm_neon_sha512.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sha512.hpp; sourceTree = "<group>"; };
+		713F56132BA20E6E003FF632 /* simde_arm_neon_shl_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_shl_n.hpp; sourceTree = "<group>"; };
+		713F56142BA20E6E003FF632 /* simde_arm_neon_shl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_shl.hpp; sourceTree = "<group>"; };
+		713F56152BA20E6E003FF632 /* simde_arm_neon_shll_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_shll_high_n.hpp; sourceTree = "<group>"; };
+		713F56162BA20E6E003FF632 /* simde_arm_neon_shll_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_shll_n.hpp; sourceTree = "<group>"; };
+		713F56172BA20E6E003FF632 /* simde_arm_neon_shr_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_shr_n.hpp; sourceTree = "<group>"; };
+		713F56182BA20E6E003FF632 /* simde_arm_neon_shrn_high_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_shrn_high_n.hpp; sourceTree = "<group>"; };
+		713F56192BA20E6E003FF632 /* simde_arm_neon_shrn_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_shrn_n.hpp; sourceTree = "<group>"; };
+		713F561A2BA20E6E003FF632 /* simde_arm_neon_sli_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sli_n.hpp; sourceTree = "<group>"; };
+		713F561B2BA20E6E003FF632 /* simde_arm_neon_sm3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sm3.hpp; sourceTree = "<group>"; };
+		713F561C2BA20E6E003FF632 /* simde_arm_neon_sm4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sm4.hpp; sourceTree = "<group>"; };
+		713F561D2BA20E6E003FF632 /* simde_arm_neon_sqadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sqadd.hpp; sourceTree = "<group>"; };
+		713F561E2BA20E6E003FF632 /* simde_arm_neon_sqrt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sqrt.hpp; sourceTree = "<group>"; };
+		713F561F2BA20E6E003FF632 /* simde_arm_neon_sra_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sra_n.hpp; sourceTree = "<group>"; };
+		713F56202BA20E6E003FF632 /* simde_arm_neon_sri_n.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sri_n.hpp; sourceTree = "<group>"; };
+		713F56212BA20E6E003FF632 /* simde_arm_neon_st1_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1_lane.hpp; sourceTree = "<group>"; };
+		713F56222BA20E6E003FF632 /* simde_arm_neon_st1_x2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1_x2.hpp; sourceTree = "<group>"; };
+		713F56232BA20E6E003FF632 /* simde_arm_neon_st1_x3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1_x3.hpp; sourceTree = "<group>"; };
+		713F56242BA20E6E003FF632 /* simde_arm_neon_st1_x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1_x4.hpp; sourceTree = "<group>"; };
+		713F56252BA20E6E003FF632 /* simde_arm_neon_st1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1.hpp; sourceTree = "<group>"; };
+		713F56262BA20E6E003FF632 /* simde_arm_neon_st1q_x2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1q_x2.hpp; sourceTree = "<group>"; };
+		713F56272BA20E6E003FF632 /* simde_arm_neon_st1q_x3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1q_x3.hpp; sourceTree = "<group>"; };
+		713F56282BA20E6E003FF632 /* simde_arm_neon_st1q_x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st1q_x4.hpp; sourceTree = "<group>"; };
+		713F56292BA20E6E003FF632 /* simde_arm_neon_st2_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st2_lane.hpp; sourceTree = "<group>"; };
+		713F562A2BA20E6E003FF632 /* simde_arm_neon_st2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st2.hpp; sourceTree = "<group>"; };
+		713F562B2BA20E6E003FF632 /* simde_arm_neon_st3_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st3_lane.hpp; sourceTree = "<group>"; };
+		713F562C2BA20E6E003FF632 /* simde_arm_neon_st3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st3.hpp; sourceTree = "<group>"; };
+		713F562D2BA20E6E003FF632 /* simde_arm_neon_st4_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st4_lane.hpp; sourceTree = "<group>"; };
+		713F562E2BA20E6E003FF632 /* simde_arm_neon_st4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_st4.hpp; sourceTree = "<group>"; };
+		713F562F2BA20E6E003FF632 /* simde_arm_neon_sub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sub.hpp; sourceTree = "<group>"; };
+		713F56302BA20E6E003FF632 /* simde_arm_neon_subhn_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_subhn_high.hpp; sourceTree = "<group>"; };
+		713F56312BA20E6E003FF632 /* simde_arm_neon_subhn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_subhn.hpp; sourceTree = "<group>"; };
+		713F56322BA20E6E003FF632 /* simde_arm_neon_subl_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_subl_high.hpp; sourceTree = "<group>"; };
+		713F56332BA20E6E003FF632 /* simde_arm_neon_subl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_subl.hpp; sourceTree = "<group>"; };
+		713F56342BA20E6E003FF632 /* simde_arm_neon_subw_high.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_subw_high.hpp; sourceTree = "<group>"; };
+		713F56352BA20E6E003FF632 /* simde_arm_neon_subw.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_subw.hpp; sourceTree = "<group>"; };
+		713F56362BA20E6E003FF632 /* simde_arm_neon_sudot_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_sudot_lane.hpp; sourceTree = "<group>"; };
+		713F56372BA20E6E003FF632 /* simde_arm_neon_tbl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_tbl.hpp; sourceTree = "<group>"; };
+		713F56382BA20E6E003FF632 /* simde_arm_neon_tbx.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_tbx.hpp; sourceTree = "<group>"; };
+		713F56392BA20E6E003FF632 /* simde_arm_neon_trn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_trn.hpp; sourceTree = "<group>"; };
+		713F563A2BA20E6E003FF632 /* simde_arm_neon_trn1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_trn1.hpp; sourceTree = "<group>"; };
+		713F563B2BA20E6E003FF632 /* simde_arm_neon_trn2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_trn2.hpp; sourceTree = "<group>"; };
+		713F563C2BA20E6E003FF632 /* simde_arm_neon_tst.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_tst.hpp; sourceTree = "<group>"; };
+		713F563D2BA20E6E003FF632 /* simde_arm_neon_types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_types.hpp; sourceTree = "<group>"; };
+		713F563E2BA20E6E003FF632 /* simde_arm_neon_uqadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_uqadd.hpp; sourceTree = "<group>"; };
+		713F563F2BA20E6E003FF632 /* simde_arm_neon_usdot_lane.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_usdot_lane.hpp; sourceTree = "<group>"; };
+		713F56402BA20E6E003FF632 /* simde_arm_neon_usdot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_usdot.hpp; sourceTree = "<group>"; };
+		713F56412BA20E6E003FF632 /* simde_arm_neon_uzp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_uzp.hpp; sourceTree = "<group>"; };
+		713F56422BA20E6E003FF632 /* simde_arm_neon_uzp1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_uzp1.hpp; sourceTree = "<group>"; };
+		713F56432BA20E6E003FF632 /* simde_arm_neon_uzp2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_uzp2.hpp; sourceTree = "<group>"; };
+		713F56442BA20E6E003FF632 /* simde_arm_neon_xar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_xar.hpp; sourceTree = "<group>"; };
+		713F56452BA20E6E003FF632 /* simde_arm_neon_zip.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_zip.hpp; sourceTree = "<group>"; };
+		713F56462BA20E6E003FF632 /* simde_arm_neon_zip1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_zip1.hpp; sourceTree = "<group>"; };
+		713F56472BA20E6E003FF632 /* simde_arm_neon_zip2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon_zip2.hpp; sourceTree = "<group>"; };
+		713F56482BA20E6E003FF632 /* simde_arm_neon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_neon.hpp; sourceTree = "<group>"; };
+		713F56492BA20E6E003FF632 /* simde_arm_sve_add.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_add.hpp; sourceTree = "<group>"; };
+		713F564A2BA20E6E003FF632 /* simde_arm_sve_and.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_and.hpp; sourceTree = "<group>"; };
+		713F564B2BA20E6E003FF632 /* simde_arm_sve_cmplt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_cmplt.hpp; sourceTree = "<group>"; };
+		713F564C2BA20E6E003FF632 /* simde_arm_sve_cnt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_cnt.hpp; sourceTree = "<group>"; };
+		713F564D2BA20E6E003FF632 /* simde_arm_sve_dup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_dup.hpp; sourceTree = "<group>"; };
+		713F564E2BA20E6E003FF632 /* simde_arm_sve_ld1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_ld1.hpp; sourceTree = "<group>"; };
+		713F564F2BA20E6E003FF632 /* simde_arm_sve_ptest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_ptest.hpp; sourceTree = "<group>"; };
+		713F56502BA20E6E003FF632 /* simde_arm_sve_ptrue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_ptrue.hpp; sourceTree = "<group>"; };
+		713F56512BA20E6E003FF632 /* simde_arm_sve_qadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_qadd.hpp; sourceTree = "<group>"; };
+		713F56522BA20E6E003FF632 /* simde_arm_sve_reinterpret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_reinterpret.hpp; sourceTree = "<group>"; };
+		713F56532BA20E6E003FF632 /* simde_arm_sve_sel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_sel.hpp; sourceTree = "<group>"; };
+		713F56542BA20E6E003FF632 /* simde_arm_sve_st1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_st1.hpp; sourceTree = "<group>"; };
+		713F56552BA20E6E003FF632 /* simde_arm_sve_sub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_sub.hpp; sourceTree = "<group>"; };
+		713F56562BA20E6E003FF632 /* simde_arm_sve_types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_types.hpp; sourceTree = "<group>"; };
+		713F56572BA20E6E003FF632 /* simde_arm_sve_whilelt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve_whilelt.hpp; sourceTree = "<group>"; };
+		713F56582BA20E6E003FF632 /* simde_arm_sve.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_arm_sve.hpp; sourceTree = "<group>"; };
+		713F56592BA20E6E003FF632 /* simde_check.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_check.hpp; sourceTree = "<group>"; };
+		713F565A2BA20E6E003FF632 /* simde_debug-trap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_debug-trap.hpp"; sourceTree = "<group>"; };
+		713F565B2BA20E6E003FF632 /* simde_hedley.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_hedley.hpp; sourceTree = "<group>"; };
+		713F565C2BA20E6E003FF632 /* simde_mips_msa_add_a.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_add_a.hpp; sourceTree = "<group>"; };
+		713F565D2BA20E6E003FF632 /* simde_mips_msa_adds_a.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_adds_a.hpp; sourceTree = "<group>"; };
+		713F565E2BA20E6E003FF632 /* simde_mips_msa_adds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_adds.hpp; sourceTree = "<group>"; };
+		713F565F2BA20E6E003FF632 /* simde_mips_msa_addv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_addv.hpp; sourceTree = "<group>"; };
+		713F56602BA20E6E003FF632 /* simde_mips_msa_addvi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_addvi.hpp; sourceTree = "<group>"; };
+		713F56612BA20E6E003FF632 /* simde_mips_msa_and.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_and.hpp; sourceTree = "<group>"; };
+		713F56622BA20E6E003FF632 /* simde_mips_msa_andi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_andi.hpp; sourceTree = "<group>"; };
+		713F56632BA20E6E003FF632 /* simde_mips_msa_ld.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_ld.hpp; sourceTree = "<group>"; };
+		713F56642BA20E6E003FF632 /* simde_mips_msa_madd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_madd.hpp; sourceTree = "<group>"; };
+		713F56652BA20E6E003FF632 /* simde_mips_msa_st.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_st.hpp; sourceTree = "<group>"; };
+		713F56662BA20E6E003FF632 /* simde_mips_msa_subv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_subv.hpp; sourceTree = "<group>"; };
+		713F56672BA20E6E003FF632 /* simde_mips_msa_types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa_types.hpp; sourceTree = "<group>"; };
+		713F56682BA20E6E003FF632 /* simde_mips_msa.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_mips_msa.hpp; sourceTree = "<group>"; };
+		713F56692BA20E6E003FF632 /* simde_simde-aes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-aes.hpp"; sourceTree = "<group>"; };
+		713F566A2BA20E6E003FF632 /* simde_simde-align.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-align.hpp"; sourceTree = "<group>"; };
+		713F566B2BA20E6E003FF632 /* simde_simde-arch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-arch.hpp"; sourceTree = "<group>"; };
+		713F566C2BA20E6E003FF632 /* simde_simde-bf16.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-bf16.hpp"; sourceTree = "<group>"; };
+		713F566D2BA20E6E003FF632 /* simde_simde-common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-common.hpp"; sourceTree = "<group>"; };
+		713F566E2BA20E6E003FF632 /* simde_simde-complex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-complex.hpp"; sourceTree = "<group>"; };
+		713F566F2BA20E6E003FF632 /* simde_simde-constify.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-constify.hpp"; sourceTree = "<group>"; };
+		713F56702BA20E6E003FF632 /* simde_simde-detect-clang.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-detect-clang.hpp"; sourceTree = "<group>"; };
+		713F56712BA20E6E003FF632 /* simde_simde-diagnostic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-diagnostic.hpp"; sourceTree = "<group>"; };
+		713F56722BA20E6E003FF632 /* simde_simde-f16.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-f16.hpp"; sourceTree = "<group>"; };
+		713F56732BA20E6E003FF632 /* simde_simde-features.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-features.hpp"; sourceTree = "<group>"; };
+		713F56742BA20E6E003FF632 /* simde_simde-math.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_simde-math.hpp"; sourceTree = "<group>"; };
+		713F56752BA20E6E003FF632 /* simde_wasm_relaxed-simd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "simde_wasm_relaxed-simd.hpp"; sourceTree = "<group>"; };
+		713F56762BA20E6E003FF632 /* simde_wasm_simd128.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_wasm_simd128.hpp; sourceTree = "<group>"; };
+		713F56772BA20E6E003FF632 /* simde_x86_aes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_aes.hpp; sourceTree = "<group>"; };
+		713F56782BA20E6E003FF632 /* simde_x86_avx.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx.hpp; sourceTree = "<group>"; };
+		713F56792BA20E6E003FF632 /* simde_x86_avx2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx2.hpp; sourceTree = "<group>"; };
+		713F567A2BA20E6E003FF632 /* simde_x86_avx512_2intersect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_2intersect.hpp; sourceTree = "<group>"; };
+		713F567B2BA20E6E003FF632 /* simde_x86_avx512_4dpwssd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_4dpwssd.hpp; sourceTree = "<group>"; };
+		713F567C2BA20E6E003FF632 /* simde_x86_avx512_4dpwssds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_4dpwssds.hpp; sourceTree = "<group>"; };
+		713F567D2BA20E6E003FF632 /* simde_x86_avx512_abs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_abs.hpp; sourceTree = "<group>"; };
+		713F567E2BA20E6E003FF632 /* simde_x86_avx512_add.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_add.hpp; sourceTree = "<group>"; };
+		713F567F2BA20E6E003FF632 /* simde_x86_avx512_adds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_adds.hpp; sourceTree = "<group>"; };
+		713F56802BA20E6E003FF632 /* simde_x86_avx512_and.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_and.hpp; sourceTree = "<group>"; };
+		713F56812BA20E6E003FF632 /* simde_x86_avx512_andnot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_andnot.hpp; sourceTree = "<group>"; };
+		713F56822BA20E6E003FF632 /* simde_x86_avx512_avg.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_avg.hpp; sourceTree = "<group>"; };
+		713F56832BA20E6E003FF632 /* simde_x86_avx512_bitshuffle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_bitshuffle.hpp; sourceTree = "<group>"; };
+		713F56842BA20E6E003FF632 /* simde_x86_avx512_blend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_blend.hpp; sourceTree = "<group>"; };
+		713F56852BA20E6E003FF632 /* simde_x86_avx512_broadcast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_broadcast.hpp; sourceTree = "<group>"; };
+		713F56862BA20E6E003FF632 /* simde_x86_avx512_cast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cast.hpp; sourceTree = "<group>"; };
+		713F56872BA20E6E003FF632 /* simde_x86_avx512_cmp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cmp.hpp; sourceTree = "<group>"; };
+		713F56882BA20E6E003FF632 /* simde_x86_avx512_cmpeq.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cmpeq.hpp; sourceTree = "<group>"; };
+		713F56892BA20E6E003FF632 /* simde_x86_avx512_cmpge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cmpge.hpp; sourceTree = "<group>"; };
+		713F568A2BA20E6E003FF632 /* simde_x86_avx512_cmpgt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cmpgt.hpp; sourceTree = "<group>"; };
+		713F568B2BA20E6E003FF632 /* simde_x86_avx512_cmple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cmple.hpp; sourceTree = "<group>"; };
+		713F568C2BA20E6E003FF632 /* simde_x86_avx512_cmplt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cmplt.hpp; sourceTree = "<group>"; };
+		713F568D2BA20E6E003FF632 /* simde_x86_avx512_cmpneq.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cmpneq.hpp; sourceTree = "<group>"; };
+		713F568E2BA20E6E003FF632 /* simde_x86_avx512_compress.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_compress.hpp; sourceTree = "<group>"; };
+		713F568F2BA20E6E003FF632 /* simde_x86_avx512_conflict.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_conflict.hpp; sourceTree = "<group>"; };
+		713F56902BA20E6E003FF632 /* simde_x86_avx512_copysign.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_copysign.hpp; sourceTree = "<group>"; };
+		713F56912BA20E6E003FF632 /* simde_x86_avx512_cvt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cvt.hpp; sourceTree = "<group>"; };
+		713F56922BA20E6E003FF632 /* simde_x86_avx512_cvts.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cvts.hpp; sourceTree = "<group>"; };
+		713F56932BA20E6E003FF632 /* simde_x86_avx512_cvtt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cvtt.hpp; sourceTree = "<group>"; };
+		713F56942BA20E6E003FF632 /* simde_x86_avx512_cvtus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_cvtus.hpp; sourceTree = "<group>"; };
+		713F56952BA20E6E003FF632 /* simde_x86_avx512_dbsad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_dbsad.hpp; sourceTree = "<group>"; };
+		713F56962BA20E6E003FF632 /* simde_x86_avx512_div.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_div.hpp; sourceTree = "<group>"; };
+		713F56972BA20E6E003FF632 /* simde_x86_avx512_dpbf16.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_dpbf16.hpp; sourceTree = "<group>"; };
+		713F56982BA20E6E003FF632 /* simde_x86_avx512_dpbusd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_dpbusd.hpp; sourceTree = "<group>"; };
+		713F56992BA20E6E003FF632 /* simde_x86_avx512_dpbusds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_dpbusds.hpp; sourceTree = "<group>"; };
+		713F569A2BA20E6E003FF632 /* simde_x86_avx512_dpwssd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_dpwssd.hpp; sourceTree = "<group>"; };
+		713F569B2BA20E6E003FF632 /* simde_x86_avx512_dpwssds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_dpwssds.hpp; sourceTree = "<group>"; };
+		713F569C2BA20E6E003FF632 /* simde_x86_avx512_expand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_expand.hpp; sourceTree = "<group>"; };
+		713F569D2BA20E6E003FF632 /* simde_x86_avx512_extract.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_extract.hpp; sourceTree = "<group>"; };
+		713F569E2BA20E6E003FF632 /* simde_x86_avx512_fixupimm_round.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_fixupimm_round.hpp; sourceTree = "<group>"; };
+		713F569F2BA20E6E003FF632 /* simde_x86_avx512_fixupimm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_fixupimm.hpp; sourceTree = "<group>"; };
+		713F56A02BA20E6E003FF632 /* simde_x86_avx512_flushsubnormal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_flushsubnormal.hpp; sourceTree = "<group>"; };
+		713F56A12BA20E6E003FF632 /* simde_x86_avx512_fmadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_fmadd.hpp; sourceTree = "<group>"; };
+		713F56A22BA20E6E003FF632 /* simde_x86_avx512_fmsub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_fmsub.hpp; sourceTree = "<group>"; };
+		713F56A32BA20E6E003FF632 /* simde_x86_avx512_fnmadd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_fnmadd.hpp; sourceTree = "<group>"; };
+		713F56A42BA20E6E003FF632 /* simde_x86_avx512_fnmsub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_fnmsub.hpp; sourceTree = "<group>"; };
+		713F56A52BA20E6E003FF632 /* simde_x86_avx512_fpclass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_fpclass.hpp; sourceTree = "<group>"; };
+		713F56A62BA20E6E003FF632 /* simde_x86_avx512_gather.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_gather.hpp; sourceTree = "<group>"; };
+		713F56A72BA20E6E003FF632 /* simde_x86_avx512_insert.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_insert.hpp; sourceTree = "<group>"; };
+		713F56A82BA20E6E003FF632 /* simde_x86_avx512_kand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_kand.hpp; sourceTree = "<group>"; };
+		713F56A92BA20E6E003FF632 /* simde_x86_avx512_knot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_knot.hpp; sourceTree = "<group>"; };
+		713F56AA2BA20E6E003FF632 /* simde_x86_avx512_kshift.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_kshift.hpp; sourceTree = "<group>"; };
+		713F56AB2BA20E6E003FF632 /* simde_x86_avx512_kxor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_kxor.hpp; sourceTree = "<group>"; };
+		713F56AC2BA20E6E003FF632 /* simde_x86_avx512_load.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_load.hpp; sourceTree = "<group>"; };
+		713F56AD2BA20E6E003FF632 /* simde_x86_avx512_loadu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_loadu.hpp; sourceTree = "<group>"; };
+		713F56AE2BA20E6E003FF632 /* simde_x86_avx512_lzcnt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_lzcnt.hpp; sourceTree = "<group>"; };
+		713F56AF2BA20E6E003FF632 /* simde_x86_avx512_madd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_madd.hpp; sourceTree = "<group>"; };
+		713F56B02BA20E6E003FF632 /* simde_x86_avx512_maddubs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_maddubs.hpp; sourceTree = "<group>"; };
+		713F56B12BA20E6E003FF632 /* simde_x86_avx512_max.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_max.hpp; sourceTree = "<group>"; };
+		713F56B22BA20E6E003FF632 /* simde_x86_avx512_min.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_min.hpp; sourceTree = "<group>"; };
+		713F56B32BA20E6E003FF632 /* simde_x86_avx512_mov_mask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_mov_mask.hpp; sourceTree = "<group>"; };
+		713F56B42BA20E6E003FF632 /* simde_x86_avx512_mov.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_mov.hpp; sourceTree = "<group>"; };
+		713F56B52BA20E6E003FF632 /* simde_x86_avx512_movm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_movm.hpp; sourceTree = "<group>"; };
+		713F56B62BA20E6E003FF632 /* simde_x86_avx512_mul.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_mul.hpp; sourceTree = "<group>"; };
+		713F56B72BA20E6E003FF632 /* simde_x86_avx512_mulhi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_mulhi.hpp; sourceTree = "<group>"; };
+		713F56B82BA20E6E003FF632 /* simde_x86_avx512_mulhrs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_mulhrs.hpp; sourceTree = "<group>"; };
+		713F56B92BA20E6E003FF632 /* simde_x86_avx512_mullo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_mullo.hpp; sourceTree = "<group>"; };
+		713F56BA2BA20E6E003FF632 /* simde_x86_avx512_multishift.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_multishift.hpp; sourceTree = "<group>"; };
+		713F56BB2BA20E6E003FF632 /* simde_x86_avx512_negate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_negate.hpp; sourceTree = "<group>"; };
+		713F56BC2BA20E6E003FF632 /* simde_x86_avx512_or.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_or.hpp; sourceTree = "<group>"; };
+		713F56BD2BA20E6E003FF632 /* simde_x86_avx512_packs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_packs.hpp; sourceTree = "<group>"; };
+		713F56BE2BA20E6E003FF632 /* simde_x86_avx512_packus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_packus.hpp; sourceTree = "<group>"; };
+		713F56BF2BA20E6E003FF632 /* simde_x86_avx512_permutex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_permutex.hpp; sourceTree = "<group>"; };
+		713F56C02BA20E6E003FF632 /* simde_x86_avx512_permutex2var.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_permutex2var.hpp; sourceTree = "<group>"; };
+		713F56C12BA20E6E003FF632 /* simde_x86_avx512_permutexvar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_permutexvar.hpp; sourceTree = "<group>"; };
+		713F56C22BA20E6E003FF632 /* simde_x86_avx512_popcnt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_popcnt.hpp; sourceTree = "<group>"; };
+		713F56C32BA20E6E003FF632 /* simde_x86_avx512_range_round.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_range_round.hpp; sourceTree = "<group>"; };
+		713F56C42BA20E6E003FF632 /* simde_x86_avx512_range.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_range.hpp; sourceTree = "<group>"; };
+		713F56C52BA20E6E003FF632 /* simde_x86_avx512_rcp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_rcp.hpp; sourceTree = "<group>"; };
+		713F56C62BA20E6E003FF632 /* simde_x86_avx512_reduce.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_reduce.hpp; sourceTree = "<group>"; };
+		713F56C72BA20E6E003FF632 /* simde_x86_avx512_rol.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_rol.hpp; sourceTree = "<group>"; };
+		713F56C82BA20E6E003FF632 /* simde_x86_avx512_rolv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_rolv.hpp; sourceTree = "<group>"; };
+		713F56C92BA20E6E003FF632 /* simde_x86_avx512_ror.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_ror.hpp; sourceTree = "<group>"; };
+		713F56CA2BA20E6E003FF632 /* simde_x86_avx512_rorv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_rorv.hpp; sourceTree = "<group>"; };
+		713F56CB2BA20E6E003FF632 /* simde_x86_avx512_round.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_round.hpp; sourceTree = "<group>"; };
+		713F56CC2BA20E6E003FF632 /* simde_x86_avx512_roundscale_round.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_roundscale_round.hpp; sourceTree = "<group>"; };
+		713F56CD2BA20E6E003FF632 /* simde_x86_avx512_roundscale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_roundscale.hpp; sourceTree = "<group>"; };
+		713F56CE2BA20E6E003FF632 /* simde_x86_avx512_sad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_sad.hpp; sourceTree = "<group>"; };
+		713F56CF2BA20E6E003FF632 /* simde_x86_avx512_scalef.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_scalef.hpp; sourceTree = "<group>"; };
+		713F56D02BA20E6E003FF632 /* simde_x86_avx512_set.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_set.hpp; sourceTree = "<group>"; };
+		713F56D12BA20E6E003FF632 /* simde_x86_avx512_set1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_set1.hpp; sourceTree = "<group>"; };
+		713F56D22BA20E6E003FF632 /* simde_x86_avx512_set4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_set4.hpp; sourceTree = "<group>"; };
+		713F56D32BA20E6E003FF632 /* simde_x86_avx512_setone.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_setone.hpp; sourceTree = "<group>"; };
+		713F56D42BA20E6E003FF632 /* simde_x86_avx512_setr.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_setr.hpp; sourceTree = "<group>"; };
+		713F56D52BA20E6E003FF632 /* simde_x86_avx512_setr4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_setr4.hpp; sourceTree = "<group>"; };
+		713F56D62BA20E6E003FF632 /* simde_x86_avx512_setzero.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_setzero.hpp; sourceTree = "<group>"; };
+		713F56D72BA20E6E003FF632 /* simde_x86_avx512_shldv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_shldv.hpp; sourceTree = "<group>"; };
+		713F56D82BA20E6E003FF632 /* simde_x86_avx512_shuffle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_shuffle.hpp; sourceTree = "<group>"; };
+		713F56D92BA20E6E003FF632 /* simde_x86_avx512_sll.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_sll.hpp; sourceTree = "<group>"; };
+		713F56DA2BA20E6E003FF632 /* simde_x86_avx512_slli.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_slli.hpp; sourceTree = "<group>"; };
+		713F56DB2BA20E6E003FF632 /* simde_x86_avx512_sllv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_sllv.hpp; sourceTree = "<group>"; };
+		713F56DC2BA20E6E003FF632 /* simde_x86_avx512_sqrt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_sqrt.hpp; sourceTree = "<group>"; };
+		713F56DD2BA20E6E003FF632 /* simde_x86_avx512_sra.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_sra.hpp; sourceTree = "<group>"; };
+		713F56DE2BA20E6E003FF632 /* simde_x86_avx512_srai.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_srai.hpp; sourceTree = "<group>"; };
+		713F56DF2BA20E6E003FF632 /* simde_x86_avx512_srav.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_srav.hpp; sourceTree = "<group>"; };
+		713F56E02BA20E6E003FF632 /* simde_x86_avx512_srl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_srl.hpp; sourceTree = "<group>"; };
+		713F56E12BA20E6E003FF632 /* simde_x86_avx512_srli.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_srli.hpp; sourceTree = "<group>"; };
+		713F56E22BA20E6E003FF632 /* simde_x86_avx512_srlv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_srlv.hpp; sourceTree = "<group>"; };
+		713F56E32BA20E6E003FF632 /* simde_x86_avx512_store.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_store.hpp; sourceTree = "<group>"; };
+		713F56E42BA20E6E003FF632 /* simde_x86_avx512_storeu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_storeu.hpp; sourceTree = "<group>"; };
+		713F56E52BA20E6E003FF632 /* simde_x86_avx512_sub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_sub.hpp; sourceTree = "<group>"; };
+		713F56E62BA20E6E003FF632 /* simde_x86_avx512_subs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_subs.hpp; sourceTree = "<group>"; };
+		713F56E72BA20E6E003FF632 /* simde_x86_avx512_ternarylogic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_ternarylogic.hpp; sourceTree = "<group>"; };
+		713F56E82BA20E6E003FF632 /* simde_x86_avx512_test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_test.hpp; sourceTree = "<group>"; };
+		713F56E92BA20E6E003FF632 /* simde_x86_avx512_testn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_testn.hpp; sourceTree = "<group>"; };
+		713F56EA2BA20E6E003FF632 /* simde_x86_avx512_types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_types.hpp; sourceTree = "<group>"; };
+		713F56EB2BA20E6E003FF632 /* simde_x86_avx512_unpackhi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_unpackhi.hpp; sourceTree = "<group>"; };
+		713F56EC2BA20E6E003FF632 /* simde_x86_avx512_unpacklo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_unpacklo.hpp; sourceTree = "<group>"; };
+		713F56ED2BA20E6E003FF632 /* simde_x86_avx512_xor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_xor.hpp; sourceTree = "<group>"; };
+		713F56EE2BA20E6E003FF632 /* simde_x86_avx512_xorsign.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512_xorsign.hpp; sourceTree = "<group>"; };
+		713F56EF2BA20E6E003FF632 /* simde_x86_avx512.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_avx512.hpp; sourceTree = "<group>"; };
+		713F56F02BA20E6E003FF632 /* simde_x86_clmul.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_clmul.hpp; sourceTree = "<group>"; };
+		713F56F12BA20E6E003FF632 /* simde_x86_f16c.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_f16c.hpp; sourceTree = "<group>"; };
+		713F56F22BA20E6E003FF632 /* simde_x86_fma.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_fma.hpp; sourceTree = "<group>"; };
+		713F56F32BA20E6E003FF632 /* simde_x86_gfni.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_gfni.hpp; sourceTree = "<group>"; };
+		713F56F42BA20E6E003FF632 /* simde_x86_mmx.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_mmx.hpp; sourceTree = "<group>"; };
+		713F56F52BA20E6E003FF632 /* simde_x86_sse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_sse.hpp; sourceTree = "<group>"; };
+		713F56F62BA20E6E003FF632 /* simde_x86_sse2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_sse2.hpp; sourceTree = "<group>"; };
+		713F56F72BA20E6E003FF632 /* simde_x86_sse3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_sse3.hpp; sourceTree = "<group>"; };
+		713F56F82BA20E6E003FF632 /* simde_x86_sse4.1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_sse4.1.hpp; sourceTree = "<group>"; };
+		713F56F92BA20E6E003FF632 /* simde_x86_sse4.2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_sse4.2.hpp; sourceTree = "<group>"; };
+		713F56FA2BA20E6E003FF632 /* simde_x86_ssse3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_ssse3.hpp; sourceTree = "<group>"; };
+		713F56FB2BA20E6E003FF632 /* simde_x86_svml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_svml.hpp; sourceTree = "<group>"; };
+		713F56FC2BA20E6E003FF632 /* simde_x86_xop.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simde_x86_xop.hpp; sourceTree = "<group>"; };
+		713F56FE2BA20E6E003FF632 /* CppSimde.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppSimde.h; sourceTree = "<group>"; };
+		713F57002BA20E6E003FF632 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		713F57012BA20E6E003FF632 /* build.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.command; sourceTree = "<group>"; };
+		713F57022BA20E6E003FF632 /* CppSimde.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CppSimde.xcodeproj; sourceTree = "<group>"; };
+		713F57032BA20E6E003FF632 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +528,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713F570A2BA20E7C003FF632 /* CppSimde.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +540,7 @@
 			children = (
 				713F55152BA20E28003FF632 /* CppUUIDv4 */,
 				713F55142BA20E28003FF632 /* Products */,
+				713F55222BA20E6E003FF632 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,8 +556,544 @@
 			isa = PBXGroup;
 			children = (
 				713F55162BA20E28003FF632 /* CppUUIDv4.h */,
+				713F551F2BA20E69003FF632 /* UUIDv4 */,
 			);
 			path = CppUUIDv4;
+			sourceTree = "<group>";
+		};
+		713F551F2BA20E69003FF632 /* UUIDv4 */ = {
+			isa = PBXGroup;
+			children = (
+				713F551D2BA20E69003FF632 /* uuidv4_endianness.hpp */,
+				713F551E2BA20E69003FF632 /* uuidv4_uuid.hpp */,
+			);
+			path = UUIDv4;
+			sourceTree = "<group>";
+		};
+		713F55222BA20E6E003FF632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				713F57042BA20E6E003FF632 /* CppSimde */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		713F55272BA20E6E003FF632 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				713F55232BA20E6E003FF632 /* CppSimde-iOS.xcarchive */,
+				713F55242BA20E6E003FF632 /* CppSimde-OSX.xcarchive */,
+				713F55252BA20E6E003FF632 /* CppSimde-Sim.xcarchive */,
+				713F55262BA20E6E003FF632 /* CppSimde.xcframework */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		713F56FD2BA20E6E003FF632 /* Simde */ = {
+			isa = PBXGroup;
+			children = (
+				713F55282BA20E6E003FF632 /* simde_arm_neon_aba.hpp */,
+				713F55292BA20E6E003FF632 /* simde_arm_neon_abal_high.hpp */,
+				713F552A2BA20E6E003FF632 /* simde_arm_neon_abal.hpp */,
+				713F552B2BA20E6E003FF632 /* simde_arm_neon_abd.hpp */,
+				713F552C2BA20E6E003FF632 /* simde_arm_neon_abdl_high.hpp */,
+				713F552D2BA20E6E003FF632 /* simde_arm_neon_abdl.hpp */,
+				713F552E2BA20E6E003FF632 /* simde_arm_neon_abs.hpp */,
+				713F552F2BA20E6E003FF632 /* simde_arm_neon_add.hpp */,
+				713F55302BA20E6E003FF632 /* simde_arm_neon_addhn_high.hpp */,
+				713F55312BA20E6E003FF632 /* simde_arm_neon_addhn.hpp */,
+				713F55322BA20E6E003FF632 /* simde_arm_neon_addl_high.hpp */,
+				713F55332BA20E6E003FF632 /* simde_arm_neon_addl.hpp */,
+				713F55342BA20E6E003FF632 /* simde_arm_neon_addlv.hpp */,
+				713F55352BA20E6E003FF632 /* simde_arm_neon_addv.hpp */,
+				713F55362BA20E6E003FF632 /* simde_arm_neon_addw_high.hpp */,
+				713F55372BA20E6E003FF632 /* simde_arm_neon_addw.hpp */,
+				713F55382BA20E6E003FF632 /* simde_arm_neon_aes.hpp */,
+				713F55392BA20E6E003FF632 /* simde_arm_neon_and.hpp */,
+				713F553A2BA20E6E003FF632 /* simde_arm_neon_bcax.hpp */,
+				713F553B2BA20E6E003FF632 /* simde_arm_neon_bic.hpp */,
+				713F553C2BA20E6E003FF632 /* simde_arm_neon_bsl.hpp */,
+				713F553D2BA20E6E003FF632 /* simde_arm_neon_cadd_rot90.hpp */,
+				713F553E2BA20E6E003FF632 /* simde_arm_neon_cadd_rot270.hpp */,
+				713F553F2BA20E6E003FF632 /* simde_arm_neon_cage.hpp */,
+				713F55402BA20E6E003FF632 /* simde_arm_neon_cagt.hpp */,
+				713F55412BA20E6E003FF632 /* simde_arm_neon_cale.hpp */,
+				713F55422BA20E6E003FF632 /* simde_arm_neon_calt.hpp */,
+				713F55432BA20E6E003FF632 /* simde_arm_neon_ceq.hpp */,
+				713F55442BA20E6E003FF632 /* simde_arm_neon_ceqz.hpp */,
+				713F55452BA20E6E003FF632 /* simde_arm_neon_cge.hpp */,
+				713F55462BA20E6E003FF632 /* simde_arm_neon_cgez.hpp */,
+				713F55472BA20E6E003FF632 /* simde_arm_neon_cgt.hpp */,
+				713F55482BA20E6E003FF632 /* simde_arm_neon_cgtz.hpp */,
+				713F55492BA20E6E003FF632 /* simde_arm_neon_cle.hpp */,
+				713F554A2BA20E6E003FF632 /* simde_arm_neon_clez.hpp */,
+				713F554B2BA20E6E003FF632 /* simde_arm_neon_cls.hpp */,
+				713F554C2BA20E6E003FF632 /* simde_arm_neon_clt.hpp */,
+				713F554D2BA20E6E003FF632 /* simde_arm_neon_cltz.hpp */,
+				713F554E2BA20E6E003FF632 /* simde_arm_neon_clz.hpp */,
+				713F554F2BA20E6E003FF632 /* simde_arm_neon_cmla_lane.hpp */,
+				713F55502BA20E6E003FF632 /* simde_arm_neon_cmla_rot90_lane.hpp */,
+				713F55512BA20E6E003FF632 /* simde_arm_neon_cmla_rot90.hpp */,
+				713F55522BA20E6E003FF632 /* simde_arm_neon_cmla_rot180_lane.hpp */,
+				713F55532BA20E6E003FF632 /* simde_arm_neon_cmla_rot180.hpp */,
+				713F55542BA20E6E003FF632 /* simde_arm_neon_cmla_rot270_lane.hpp */,
+				713F55552BA20E6E003FF632 /* simde_arm_neon_cmla_rot270.hpp */,
+				713F55562BA20E6E003FF632 /* simde_arm_neon_cmla.hpp */,
+				713F55572BA20E6E003FF632 /* simde_arm_neon_cnt.hpp */,
+				713F55582BA20E6E003FF632 /* simde_arm_neon_combine.hpp */,
+				713F55592BA20E6E003FF632 /* simde_arm_neon_copy_lane.hpp */,
+				713F555A2BA20E6E003FF632 /* simde_arm_neon_crc32.hpp */,
+				713F555B2BA20E6E003FF632 /* simde_arm_neon_create.hpp */,
+				713F555C2BA20E6E003FF632 /* simde_arm_neon_cvt_n.hpp */,
+				713F555D2BA20E6E003FF632 /* simde_arm_neon_cvt.hpp */,
+				713F555E2BA20E6E003FF632 /* simde_arm_neon_cvtm.hpp */,
+				713F555F2BA20E6E003FF632 /* simde_arm_neon_cvtn.hpp */,
+				713F55602BA20E6E003FF632 /* simde_arm_neon_cvtp.hpp */,
+				713F55612BA20E6E003FF632 /* simde_arm_neon_div.hpp */,
+				713F55622BA20E6E003FF632 /* simde_arm_neon_dot_lane.hpp */,
+				713F55632BA20E6E003FF632 /* simde_arm_neon_dot.hpp */,
+				713F55642BA20E6E003FF632 /* simde_arm_neon_dup_lane.hpp */,
+				713F55652BA20E6E003FF632 /* simde_arm_neon_dup_n.hpp */,
+				713F55662BA20E6E003FF632 /* simde_arm_neon_eor.hpp */,
+				713F55672BA20E6E003FF632 /* simde_arm_neon_ext.hpp */,
+				713F55682BA20E6E003FF632 /* simde_arm_neon_fma_lane.hpp */,
+				713F55692BA20E6E003FF632 /* simde_arm_neon_fma_n.hpp */,
+				713F556A2BA20E6E003FF632 /* simde_arm_neon_fma.hpp */,
+				713F556B2BA20E6E003FF632 /* simde_arm_neon_fmlal.hpp */,
+				713F556C2BA20E6E003FF632 /* simde_arm_neon_fmlsl.hpp */,
+				713F556D2BA20E6E003FF632 /* simde_arm_neon_fms_lane.hpp */,
+				713F556E2BA20E6E003FF632 /* simde_arm_neon_fms_n.hpp */,
+				713F556F2BA20E6E003FF632 /* simde_arm_neon_fms.hpp */,
+				713F55702BA20E6E003FF632 /* simde_arm_neon_get_high.hpp */,
+				713F55712BA20E6E003FF632 /* simde_arm_neon_get_lane.hpp */,
+				713F55722BA20E6E003FF632 /* simde_arm_neon_get_low.hpp */,
+				713F55732BA20E6E003FF632 /* simde_arm_neon_hadd.hpp */,
+				713F55742BA20E6E003FF632 /* simde_arm_neon_hsub.hpp */,
+				713F55752BA20E6E003FF632 /* simde_arm_neon_ld1_dup.hpp */,
+				713F55762BA20E6E003FF632 /* simde_arm_neon_ld1_lane.hpp */,
+				713F55772BA20E6E003FF632 /* simde_arm_neon_ld1_x2.hpp */,
+				713F55782BA20E6E003FF632 /* simde_arm_neon_ld1_x3.hpp */,
+				713F55792BA20E6E003FF632 /* simde_arm_neon_ld1_x4.hpp */,
+				713F557A2BA20E6E003FF632 /* simde_arm_neon_ld1.hpp */,
+				713F557B2BA20E6E003FF632 /* simde_arm_neon_ld1q_x2.hpp */,
+				713F557C2BA20E6E003FF632 /* simde_arm_neon_ld1q_x3.hpp */,
+				713F557D2BA20E6E003FF632 /* simde_arm_neon_ld1q_x4.hpp */,
+				713F557E2BA20E6E003FF632 /* simde_arm_neon_ld2_dup.hpp */,
+				713F557F2BA20E6E003FF632 /* simde_arm_neon_ld2_lane.hpp */,
+				713F55802BA20E6E003FF632 /* simde_arm_neon_ld2.hpp */,
+				713F55812BA20E6E003FF632 /* simde_arm_neon_ld3_dup.hpp */,
+				713F55822BA20E6E003FF632 /* simde_arm_neon_ld3_lane.hpp */,
+				713F55832BA20E6E003FF632 /* simde_arm_neon_ld3.hpp */,
+				713F55842BA20E6E003FF632 /* simde_arm_neon_ld4_dup.hpp */,
+				713F55852BA20E6E003FF632 /* simde_arm_neon_ld4_lane.hpp */,
+				713F55862BA20E6E003FF632 /* simde_arm_neon_ld4.hpp */,
+				713F55872BA20E6E003FF632 /* simde_arm_neon_max.hpp */,
+				713F55882BA20E6E003FF632 /* simde_arm_neon_maxnm.hpp */,
+				713F55892BA20E6E003FF632 /* simde_arm_neon_maxnmv.hpp */,
+				713F558A2BA20E6E003FF632 /* simde_arm_neon_maxv.hpp */,
+				713F558B2BA20E6E003FF632 /* simde_arm_neon_min.hpp */,
+				713F558C2BA20E6E003FF632 /* simde_arm_neon_minnm.hpp */,
+				713F558D2BA20E6E003FF632 /* simde_arm_neon_minnmv.hpp */,
+				713F558E2BA20E6E003FF632 /* simde_arm_neon_minv.hpp */,
+				713F558F2BA20E6E003FF632 /* simde_arm_neon_mla_lane.hpp */,
+				713F55902BA20E6E003FF632 /* simde_arm_neon_mla_n.hpp */,
+				713F55912BA20E6E003FF632 /* simde_arm_neon_mla.hpp */,
+				713F55922BA20E6E003FF632 /* simde_arm_neon_mlal_high_lane.hpp */,
+				713F55932BA20E6E003FF632 /* simde_arm_neon_mlal_high_n.hpp */,
+				713F55942BA20E6E003FF632 /* simde_arm_neon_mlal_high.hpp */,
+				713F55952BA20E6E003FF632 /* simde_arm_neon_mlal_lane.hpp */,
+				713F55962BA20E6E003FF632 /* simde_arm_neon_mlal_n.hpp */,
+				713F55972BA20E6E003FF632 /* simde_arm_neon_mlal.hpp */,
+				713F55982BA20E6E003FF632 /* simde_arm_neon_mls_lane.hpp */,
+				713F55992BA20E6E003FF632 /* simde_arm_neon_mls_n.hpp */,
+				713F559A2BA20E6E003FF632 /* simde_arm_neon_mls.hpp */,
+				713F559B2BA20E6E003FF632 /* simde_arm_neon_mlsl_high_lane.hpp */,
+				713F559C2BA20E6E003FF632 /* simde_arm_neon_mlsl_high_n.hpp */,
+				713F559D2BA20E6E003FF632 /* simde_arm_neon_mlsl_high.hpp */,
+				713F559E2BA20E6E003FF632 /* simde_arm_neon_mlsl_lane.hpp */,
+				713F559F2BA20E6E003FF632 /* simde_arm_neon_mlsl_n.hpp */,
+				713F55A02BA20E6E003FF632 /* simde_arm_neon_mlsl.hpp */,
+				713F55A12BA20E6E003FF632 /* simde_arm_neon_mmlaq.hpp */,
+				713F55A22BA20E6E003FF632 /* simde_arm_neon_movl_high.hpp */,
+				713F55A32BA20E6E003FF632 /* simde_arm_neon_movl.hpp */,
+				713F55A42BA20E6E003FF632 /* simde_arm_neon_movn_high.hpp */,
+				713F55A52BA20E6E003FF632 /* simde_arm_neon_movn.hpp */,
+				713F55A62BA20E6E003FF632 /* simde_arm_neon_mul_lane.hpp */,
+				713F55A72BA20E6E003FF632 /* simde_arm_neon_mul_n.hpp */,
+				713F55A82BA20E6E003FF632 /* simde_arm_neon_mul.hpp */,
+				713F55A92BA20E6E003FF632 /* simde_arm_neon_mull_high_lane.hpp */,
+				713F55AA2BA20E6E003FF632 /* simde_arm_neon_mull_high_n.hpp */,
+				713F55AB2BA20E6E003FF632 /* simde_arm_neon_mull_high.hpp */,
+				713F55AC2BA20E6E003FF632 /* simde_arm_neon_mull_lane.hpp */,
+				713F55AD2BA20E6E003FF632 /* simde_arm_neon_mull_n.hpp */,
+				713F55AE2BA20E6E003FF632 /* simde_arm_neon_mull.hpp */,
+				713F55AF2BA20E6E003FF632 /* simde_arm_neon_mulx_lane.hpp */,
+				713F55B02BA20E6E003FF632 /* simde_arm_neon_mulx_n.hpp */,
+				713F55B12BA20E6E003FF632 /* simde_arm_neon_mulx.hpp */,
+				713F55B22BA20E6E003FF632 /* simde_arm_neon_mvn.hpp */,
+				713F55B32BA20E6E003FF632 /* simde_arm_neon_neg.hpp */,
+				713F55B42BA20E6E003FF632 /* simde_arm_neon_orn.hpp */,
+				713F55B52BA20E6E003FF632 /* simde_arm_neon_orr.hpp */,
+				713F55B62BA20E6E003FF632 /* simde_arm_neon_padal.hpp */,
+				713F55B72BA20E6E003FF632 /* simde_arm_neon_padd.hpp */,
+				713F55B82BA20E6E003FF632 /* simde_arm_neon_paddl.hpp */,
+				713F55B92BA20E6E003FF632 /* simde_arm_neon_pmax.hpp */,
+				713F55BA2BA20E6E003FF632 /* simde_arm_neon_pmaxnm.hpp */,
+				713F55BB2BA20E6E003FF632 /* simde_arm_neon_pmin.hpp */,
+				713F55BC2BA20E6E003FF632 /* simde_arm_neon_pminnm.hpp */,
+				713F55BD2BA20E6E003FF632 /* simde_arm_neon_qabs.hpp */,
+				713F55BE2BA20E6E003FF632 /* simde_arm_neon_qadd.hpp */,
+				713F55BF2BA20E6E003FF632 /* simde_arm_neon_qdmlal_high_lane.hpp */,
+				713F55C02BA20E6E003FF632 /* simde_arm_neon_qdmlal_high_n.hpp */,
+				713F55C12BA20E6E003FF632 /* simde_arm_neon_qdmlal_high.hpp */,
+				713F55C22BA20E6E003FF632 /* simde_arm_neon_qdmlal_lane.hpp */,
+				713F55C32BA20E6E003FF632 /* simde_arm_neon_qdmlal_n.hpp */,
+				713F55C42BA20E6E003FF632 /* simde_arm_neon_qdmlal.hpp */,
+				713F55C52BA20E6E003FF632 /* simde_arm_neon_qdmlsl_high_lane.hpp */,
+				713F55C62BA20E6E003FF632 /* simde_arm_neon_qdmlsl_high_n.hpp */,
+				713F55C72BA20E6E003FF632 /* simde_arm_neon_qdmlsl_high.hpp */,
+				713F55C82BA20E6E003FF632 /* simde_arm_neon_qdmlsl_lane.hpp */,
+				713F55C92BA20E6E003FF632 /* simde_arm_neon_qdmlsl_n.hpp */,
+				713F55CA2BA20E6E003FF632 /* simde_arm_neon_qdmlsl.hpp */,
+				713F55CB2BA20E6E003FF632 /* simde_arm_neon_qdmulh_lane.hpp */,
+				713F55CC2BA20E6E003FF632 /* simde_arm_neon_qdmulh_n.hpp */,
+				713F55CD2BA20E6E003FF632 /* simde_arm_neon_qdmulh.hpp */,
+				713F55CE2BA20E6E003FF632 /* simde_arm_neon_qdmull_high_lane.hpp */,
+				713F55CF2BA20E6E003FF632 /* simde_arm_neon_qdmull_high_n.hpp */,
+				713F55D02BA20E6E003FF632 /* simde_arm_neon_qdmull_high.hpp */,
+				713F55D12BA20E6E003FF632 /* simde_arm_neon_qdmull_lane.hpp */,
+				713F55D22BA20E6E003FF632 /* simde_arm_neon_qdmull_n.hpp */,
+				713F55D32BA20E6E003FF632 /* simde_arm_neon_qdmull.hpp */,
+				713F55D42BA20E6E003FF632 /* simde_arm_neon_qmovn_high.hpp */,
+				713F55D52BA20E6E003FF632 /* simde_arm_neon_qmovn.hpp */,
+				713F55D62BA20E6E003FF632 /* simde_arm_neon_qmovun_high.hpp */,
+				713F55D72BA20E6E003FF632 /* simde_arm_neon_qmovun.hpp */,
+				713F55D82BA20E6E003FF632 /* simde_arm_neon_qneg.hpp */,
+				713F55D92BA20E6E003FF632 /* simde_arm_neon_qrdmlah_lane.hpp */,
+				713F55DA2BA20E6E003FF632 /* simde_arm_neon_qrdmlah.hpp */,
+				713F55DB2BA20E6E003FF632 /* simde_arm_neon_qrdmlsh_lane.hpp */,
+				713F55DC2BA20E6E003FF632 /* simde_arm_neon_qrdmlsh.hpp */,
+				713F55DD2BA20E6E003FF632 /* simde_arm_neon_qrdmulh_lane.hpp */,
+				713F55DE2BA20E6E003FF632 /* simde_arm_neon_qrdmulh_n.hpp */,
+				713F55DF2BA20E6E003FF632 /* simde_arm_neon_qrdmulh.hpp */,
+				713F55E02BA20E6E003FF632 /* simde_arm_neon_qrshl.hpp */,
+				713F55E12BA20E6E003FF632 /* simde_arm_neon_qrshrn_high_n.hpp */,
+				713F55E22BA20E6E003FF632 /* simde_arm_neon_qrshrn_n.hpp */,
+				713F55E32BA20E6E003FF632 /* simde_arm_neon_qrshrun_high_n.hpp */,
+				713F55E42BA20E6E003FF632 /* simde_arm_neon_qrshrun_n.hpp */,
+				713F55E52BA20E6E003FF632 /* simde_arm_neon_qshl_n.hpp */,
+				713F55E62BA20E6E003FF632 /* simde_arm_neon_qshl.hpp */,
+				713F55E72BA20E6E003FF632 /* simde_arm_neon_qshlu_n.hpp */,
+				713F55E82BA20E6E003FF632 /* simde_arm_neon_qshrn_high_n.hpp */,
+				713F55E92BA20E6E003FF632 /* simde_arm_neon_qshrn_n.hpp */,
+				713F55EA2BA20E6E003FF632 /* simde_arm_neon_qshrun_high_n.hpp */,
+				713F55EB2BA20E6E003FF632 /* simde_arm_neon_qshrun_n.hpp */,
+				713F55EC2BA20E6E003FF632 /* simde_arm_neon_qsub.hpp */,
+				713F55ED2BA20E6E003FF632 /* simde_arm_neon_qtbl.hpp */,
+				713F55EE2BA20E6E003FF632 /* simde_arm_neon_qtbx.hpp */,
+				713F55EF2BA20E6E003FF632 /* simde_arm_neon_raddhn_high.hpp */,
+				713F55F02BA20E6E003FF632 /* simde_arm_neon_raddhn.hpp */,
+				713F55F12BA20E6E003FF632 /* simde_arm_neon_rax.hpp */,
+				713F55F22BA20E6E003FF632 /* simde_arm_neon_rbit.hpp */,
+				713F55F32BA20E6E003FF632 /* simde_arm_neon_recpe.hpp */,
+				713F55F42BA20E6E003FF632 /* simde_arm_neon_recps.hpp */,
+				713F55F52BA20E6E003FF632 /* simde_arm_neon_recpx.hpp */,
+				713F55F62BA20E6E003FF632 /* simde_arm_neon_reinterpret.hpp */,
+				713F55F72BA20E6E003FF632 /* simde_arm_neon_rev16.hpp */,
+				713F55F82BA20E6E003FF632 /* simde_arm_neon_rev32.hpp */,
+				713F55F92BA20E6E003FF632 /* simde_arm_neon_rev64.hpp */,
+				713F55FA2BA20E6E003FF632 /* simde_arm_neon_rhadd.hpp */,
+				713F55FB2BA20E6E003FF632 /* simde_arm_neon_rnd.hpp */,
+				713F55FC2BA20E6E003FF632 /* simde_arm_neon_rnd32x.hpp */,
+				713F55FD2BA20E6E003FF632 /* simde_arm_neon_rnd32z.hpp */,
+				713F55FE2BA20E6E003FF632 /* simde_arm_neon_rnd64x.hpp */,
+				713F55FF2BA20E6E003FF632 /* simde_arm_neon_rnd64z.hpp */,
+				713F56002BA20E6E003FF632 /* simde_arm_neon_rnda.hpp */,
+				713F56012BA20E6E003FF632 /* simde_arm_neon_rndi.hpp */,
+				713F56022BA20E6E003FF632 /* simde_arm_neon_rndm.hpp */,
+				713F56032BA20E6E003FF632 /* simde_arm_neon_rndn.hpp */,
+				713F56042BA20E6E003FF632 /* simde_arm_neon_rndp.hpp */,
+				713F56052BA20E6E003FF632 /* simde_arm_neon_rndx.hpp */,
+				713F56062BA20E6E003FF632 /* simde_arm_neon_rshl.hpp */,
+				713F56072BA20E6E003FF632 /* simde_arm_neon_rshr_n.hpp */,
+				713F56082BA20E6E003FF632 /* simde_arm_neon_rshrn_high_n.hpp */,
+				713F56092BA20E6E003FF632 /* simde_arm_neon_rshrn_n.hpp */,
+				713F560A2BA20E6E003FF632 /* simde_arm_neon_rsqrte.hpp */,
+				713F560B2BA20E6E003FF632 /* simde_arm_neon_rsqrts.hpp */,
+				713F560C2BA20E6E003FF632 /* simde_arm_neon_rsra_n.hpp */,
+				713F560D2BA20E6E003FF632 /* simde_arm_neon_rsubhn_high.hpp */,
+				713F560E2BA20E6E003FF632 /* simde_arm_neon_rsubhn.hpp */,
+				713F560F2BA20E6E003FF632 /* simde_arm_neon_set_lane.hpp */,
+				713F56102BA20E6E003FF632 /* simde_arm_neon_sha1.hpp */,
+				713F56112BA20E6E003FF632 /* simde_arm_neon_sha256.hpp */,
+				713F56122BA20E6E003FF632 /* simde_arm_neon_sha512.hpp */,
+				713F56132BA20E6E003FF632 /* simde_arm_neon_shl_n.hpp */,
+				713F56142BA20E6E003FF632 /* simde_arm_neon_shl.hpp */,
+				713F56152BA20E6E003FF632 /* simde_arm_neon_shll_high_n.hpp */,
+				713F56162BA20E6E003FF632 /* simde_arm_neon_shll_n.hpp */,
+				713F56172BA20E6E003FF632 /* simde_arm_neon_shr_n.hpp */,
+				713F56182BA20E6E003FF632 /* simde_arm_neon_shrn_high_n.hpp */,
+				713F56192BA20E6E003FF632 /* simde_arm_neon_shrn_n.hpp */,
+				713F561A2BA20E6E003FF632 /* simde_arm_neon_sli_n.hpp */,
+				713F561B2BA20E6E003FF632 /* simde_arm_neon_sm3.hpp */,
+				713F561C2BA20E6E003FF632 /* simde_arm_neon_sm4.hpp */,
+				713F561D2BA20E6E003FF632 /* simde_arm_neon_sqadd.hpp */,
+				713F561E2BA20E6E003FF632 /* simde_arm_neon_sqrt.hpp */,
+				713F561F2BA20E6E003FF632 /* simde_arm_neon_sra_n.hpp */,
+				713F56202BA20E6E003FF632 /* simde_arm_neon_sri_n.hpp */,
+				713F56212BA20E6E003FF632 /* simde_arm_neon_st1_lane.hpp */,
+				713F56222BA20E6E003FF632 /* simde_arm_neon_st1_x2.hpp */,
+				713F56232BA20E6E003FF632 /* simde_arm_neon_st1_x3.hpp */,
+				713F56242BA20E6E003FF632 /* simde_arm_neon_st1_x4.hpp */,
+				713F56252BA20E6E003FF632 /* simde_arm_neon_st1.hpp */,
+				713F56262BA20E6E003FF632 /* simde_arm_neon_st1q_x2.hpp */,
+				713F56272BA20E6E003FF632 /* simde_arm_neon_st1q_x3.hpp */,
+				713F56282BA20E6E003FF632 /* simde_arm_neon_st1q_x4.hpp */,
+				713F56292BA20E6E003FF632 /* simde_arm_neon_st2_lane.hpp */,
+				713F562A2BA20E6E003FF632 /* simde_arm_neon_st2.hpp */,
+				713F562B2BA20E6E003FF632 /* simde_arm_neon_st3_lane.hpp */,
+				713F562C2BA20E6E003FF632 /* simde_arm_neon_st3.hpp */,
+				713F562D2BA20E6E003FF632 /* simde_arm_neon_st4_lane.hpp */,
+				713F562E2BA20E6E003FF632 /* simde_arm_neon_st4.hpp */,
+				713F562F2BA20E6E003FF632 /* simde_arm_neon_sub.hpp */,
+				713F56302BA20E6E003FF632 /* simde_arm_neon_subhn_high.hpp */,
+				713F56312BA20E6E003FF632 /* simde_arm_neon_subhn.hpp */,
+				713F56322BA20E6E003FF632 /* simde_arm_neon_subl_high.hpp */,
+				713F56332BA20E6E003FF632 /* simde_arm_neon_subl.hpp */,
+				713F56342BA20E6E003FF632 /* simde_arm_neon_subw_high.hpp */,
+				713F56352BA20E6E003FF632 /* simde_arm_neon_subw.hpp */,
+				713F56362BA20E6E003FF632 /* simde_arm_neon_sudot_lane.hpp */,
+				713F56372BA20E6E003FF632 /* simde_arm_neon_tbl.hpp */,
+				713F56382BA20E6E003FF632 /* simde_arm_neon_tbx.hpp */,
+				713F56392BA20E6E003FF632 /* simde_arm_neon_trn.hpp */,
+				713F563A2BA20E6E003FF632 /* simde_arm_neon_trn1.hpp */,
+				713F563B2BA20E6E003FF632 /* simde_arm_neon_trn2.hpp */,
+				713F563C2BA20E6E003FF632 /* simde_arm_neon_tst.hpp */,
+				713F563D2BA20E6E003FF632 /* simde_arm_neon_types.hpp */,
+				713F563E2BA20E6E003FF632 /* simde_arm_neon_uqadd.hpp */,
+				713F563F2BA20E6E003FF632 /* simde_arm_neon_usdot_lane.hpp */,
+				713F56402BA20E6E003FF632 /* simde_arm_neon_usdot.hpp */,
+				713F56412BA20E6E003FF632 /* simde_arm_neon_uzp.hpp */,
+				713F56422BA20E6E003FF632 /* simde_arm_neon_uzp1.hpp */,
+				713F56432BA20E6E003FF632 /* simde_arm_neon_uzp2.hpp */,
+				713F56442BA20E6E003FF632 /* simde_arm_neon_xar.hpp */,
+				713F56452BA20E6E003FF632 /* simde_arm_neon_zip.hpp */,
+				713F56462BA20E6E003FF632 /* simde_arm_neon_zip1.hpp */,
+				713F56472BA20E6E003FF632 /* simde_arm_neon_zip2.hpp */,
+				713F56482BA20E6E003FF632 /* simde_arm_neon.hpp */,
+				713F56492BA20E6E003FF632 /* simde_arm_sve_add.hpp */,
+				713F564A2BA20E6E003FF632 /* simde_arm_sve_and.hpp */,
+				713F564B2BA20E6E003FF632 /* simde_arm_sve_cmplt.hpp */,
+				713F564C2BA20E6E003FF632 /* simde_arm_sve_cnt.hpp */,
+				713F564D2BA20E6E003FF632 /* simde_arm_sve_dup.hpp */,
+				713F564E2BA20E6E003FF632 /* simde_arm_sve_ld1.hpp */,
+				713F564F2BA20E6E003FF632 /* simde_arm_sve_ptest.hpp */,
+				713F56502BA20E6E003FF632 /* simde_arm_sve_ptrue.hpp */,
+				713F56512BA20E6E003FF632 /* simde_arm_sve_qadd.hpp */,
+				713F56522BA20E6E003FF632 /* simde_arm_sve_reinterpret.hpp */,
+				713F56532BA20E6E003FF632 /* simde_arm_sve_sel.hpp */,
+				713F56542BA20E6E003FF632 /* simde_arm_sve_st1.hpp */,
+				713F56552BA20E6E003FF632 /* simde_arm_sve_sub.hpp */,
+				713F56562BA20E6E003FF632 /* simde_arm_sve_types.hpp */,
+				713F56572BA20E6E003FF632 /* simde_arm_sve_whilelt.hpp */,
+				713F56582BA20E6E003FF632 /* simde_arm_sve.hpp */,
+				713F56592BA20E6E003FF632 /* simde_check.hpp */,
+				713F565A2BA20E6E003FF632 /* simde_debug-trap.hpp */,
+				713F565B2BA20E6E003FF632 /* simde_hedley.hpp */,
+				713F565C2BA20E6E003FF632 /* simde_mips_msa_add_a.hpp */,
+				713F565D2BA20E6E003FF632 /* simde_mips_msa_adds_a.hpp */,
+				713F565E2BA20E6E003FF632 /* simde_mips_msa_adds.hpp */,
+				713F565F2BA20E6E003FF632 /* simde_mips_msa_addv.hpp */,
+				713F56602BA20E6E003FF632 /* simde_mips_msa_addvi.hpp */,
+				713F56612BA20E6E003FF632 /* simde_mips_msa_and.hpp */,
+				713F56622BA20E6E003FF632 /* simde_mips_msa_andi.hpp */,
+				713F56632BA20E6E003FF632 /* simde_mips_msa_ld.hpp */,
+				713F56642BA20E6E003FF632 /* simde_mips_msa_madd.hpp */,
+				713F56652BA20E6E003FF632 /* simde_mips_msa_st.hpp */,
+				713F56662BA20E6E003FF632 /* simde_mips_msa_subv.hpp */,
+				713F56672BA20E6E003FF632 /* simde_mips_msa_types.hpp */,
+				713F56682BA20E6E003FF632 /* simde_mips_msa.hpp */,
+				713F56692BA20E6E003FF632 /* simde_simde-aes.hpp */,
+				713F566A2BA20E6E003FF632 /* simde_simde-align.hpp */,
+				713F566B2BA20E6E003FF632 /* simde_simde-arch.hpp */,
+				713F566C2BA20E6E003FF632 /* simde_simde-bf16.hpp */,
+				713F566D2BA20E6E003FF632 /* simde_simde-common.hpp */,
+				713F566E2BA20E6E003FF632 /* simde_simde-complex.hpp */,
+				713F566F2BA20E6E003FF632 /* simde_simde-constify.hpp */,
+				713F56702BA20E6E003FF632 /* simde_simde-detect-clang.hpp */,
+				713F56712BA20E6E003FF632 /* simde_simde-diagnostic.hpp */,
+				713F56722BA20E6E003FF632 /* simde_simde-f16.hpp */,
+				713F56732BA20E6E003FF632 /* simde_simde-features.hpp */,
+				713F56742BA20E6E003FF632 /* simde_simde-math.hpp */,
+				713F56752BA20E6E003FF632 /* simde_wasm_relaxed-simd.hpp */,
+				713F56762BA20E6E003FF632 /* simde_wasm_simd128.hpp */,
+				713F56772BA20E6E003FF632 /* simde_x86_aes.hpp */,
+				713F56782BA20E6E003FF632 /* simde_x86_avx.hpp */,
+				713F56792BA20E6E003FF632 /* simde_x86_avx2.hpp */,
+				713F567A2BA20E6E003FF632 /* simde_x86_avx512_2intersect.hpp */,
+				713F567B2BA20E6E003FF632 /* simde_x86_avx512_4dpwssd.hpp */,
+				713F567C2BA20E6E003FF632 /* simde_x86_avx512_4dpwssds.hpp */,
+				713F567D2BA20E6E003FF632 /* simde_x86_avx512_abs.hpp */,
+				713F567E2BA20E6E003FF632 /* simde_x86_avx512_add.hpp */,
+				713F567F2BA20E6E003FF632 /* simde_x86_avx512_adds.hpp */,
+				713F56802BA20E6E003FF632 /* simde_x86_avx512_and.hpp */,
+				713F56812BA20E6E003FF632 /* simde_x86_avx512_andnot.hpp */,
+				713F56822BA20E6E003FF632 /* simde_x86_avx512_avg.hpp */,
+				713F56832BA20E6E003FF632 /* simde_x86_avx512_bitshuffle.hpp */,
+				713F56842BA20E6E003FF632 /* simde_x86_avx512_blend.hpp */,
+				713F56852BA20E6E003FF632 /* simde_x86_avx512_broadcast.hpp */,
+				713F56862BA20E6E003FF632 /* simde_x86_avx512_cast.hpp */,
+				713F56872BA20E6E003FF632 /* simde_x86_avx512_cmp.hpp */,
+				713F56882BA20E6E003FF632 /* simde_x86_avx512_cmpeq.hpp */,
+				713F56892BA20E6E003FF632 /* simde_x86_avx512_cmpge.hpp */,
+				713F568A2BA20E6E003FF632 /* simde_x86_avx512_cmpgt.hpp */,
+				713F568B2BA20E6E003FF632 /* simde_x86_avx512_cmple.hpp */,
+				713F568C2BA20E6E003FF632 /* simde_x86_avx512_cmplt.hpp */,
+				713F568D2BA20E6E003FF632 /* simde_x86_avx512_cmpneq.hpp */,
+				713F568E2BA20E6E003FF632 /* simde_x86_avx512_compress.hpp */,
+				713F568F2BA20E6E003FF632 /* simde_x86_avx512_conflict.hpp */,
+				713F56902BA20E6E003FF632 /* simde_x86_avx512_copysign.hpp */,
+				713F56912BA20E6E003FF632 /* simde_x86_avx512_cvt.hpp */,
+				713F56922BA20E6E003FF632 /* simde_x86_avx512_cvts.hpp */,
+				713F56932BA20E6E003FF632 /* simde_x86_avx512_cvtt.hpp */,
+				713F56942BA20E6E003FF632 /* simde_x86_avx512_cvtus.hpp */,
+				713F56952BA20E6E003FF632 /* simde_x86_avx512_dbsad.hpp */,
+				713F56962BA20E6E003FF632 /* simde_x86_avx512_div.hpp */,
+				713F56972BA20E6E003FF632 /* simde_x86_avx512_dpbf16.hpp */,
+				713F56982BA20E6E003FF632 /* simde_x86_avx512_dpbusd.hpp */,
+				713F56992BA20E6E003FF632 /* simde_x86_avx512_dpbusds.hpp */,
+				713F569A2BA20E6E003FF632 /* simde_x86_avx512_dpwssd.hpp */,
+				713F569B2BA20E6E003FF632 /* simde_x86_avx512_dpwssds.hpp */,
+				713F569C2BA20E6E003FF632 /* simde_x86_avx512_expand.hpp */,
+				713F569D2BA20E6E003FF632 /* simde_x86_avx512_extract.hpp */,
+				713F569E2BA20E6E003FF632 /* simde_x86_avx512_fixupimm_round.hpp */,
+				713F569F2BA20E6E003FF632 /* simde_x86_avx512_fixupimm.hpp */,
+				713F56A02BA20E6E003FF632 /* simde_x86_avx512_flushsubnormal.hpp */,
+				713F56A12BA20E6E003FF632 /* simde_x86_avx512_fmadd.hpp */,
+				713F56A22BA20E6E003FF632 /* simde_x86_avx512_fmsub.hpp */,
+				713F56A32BA20E6E003FF632 /* simde_x86_avx512_fnmadd.hpp */,
+				713F56A42BA20E6E003FF632 /* simde_x86_avx512_fnmsub.hpp */,
+				713F56A52BA20E6E003FF632 /* simde_x86_avx512_fpclass.hpp */,
+				713F56A62BA20E6E003FF632 /* simde_x86_avx512_gather.hpp */,
+				713F56A72BA20E6E003FF632 /* simde_x86_avx512_insert.hpp */,
+				713F56A82BA20E6E003FF632 /* simde_x86_avx512_kand.hpp */,
+				713F56A92BA20E6E003FF632 /* simde_x86_avx512_knot.hpp */,
+				713F56AA2BA20E6E003FF632 /* simde_x86_avx512_kshift.hpp */,
+				713F56AB2BA20E6E003FF632 /* simde_x86_avx512_kxor.hpp */,
+				713F56AC2BA20E6E003FF632 /* simde_x86_avx512_load.hpp */,
+				713F56AD2BA20E6E003FF632 /* simde_x86_avx512_loadu.hpp */,
+				713F56AE2BA20E6E003FF632 /* simde_x86_avx512_lzcnt.hpp */,
+				713F56AF2BA20E6E003FF632 /* simde_x86_avx512_madd.hpp */,
+				713F56B02BA20E6E003FF632 /* simde_x86_avx512_maddubs.hpp */,
+				713F56B12BA20E6E003FF632 /* simde_x86_avx512_max.hpp */,
+				713F56B22BA20E6E003FF632 /* simde_x86_avx512_min.hpp */,
+				713F56B32BA20E6E003FF632 /* simde_x86_avx512_mov_mask.hpp */,
+				713F56B42BA20E6E003FF632 /* simde_x86_avx512_mov.hpp */,
+				713F56B52BA20E6E003FF632 /* simde_x86_avx512_movm.hpp */,
+				713F56B62BA20E6E003FF632 /* simde_x86_avx512_mul.hpp */,
+				713F56B72BA20E6E003FF632 /* simde_x86_avx512_mulhi.hpp */,
+				713F56B82BA20E6E003FF632 /* simde_x86_avx512_mulhrs.hpp */,
+				713F56B92BA20E6E003FF632 /* simde_x86_avx512_mullo.hpp */,
+				713F56BA2BA20E6E003FF632 /* simde_x86_avx512_multishift.hpp */,
+				713F56BB2BA20E6E003FF632 /* simde_x86_avx512_negate.hpp */,
+				713F56BC2BA20E6E003FF632 /* simde_x86_avx512_or.hpp */,
+				713F56BD2BA20E6E003FF632 /* simde_x86_avx512_packs.hpp */,
+				713F56BE2BA20E6E003FF632 /* simde_x86_avx512_packus.hpp */,
+				713F56BF2BA20E6E003FF632 /* simde_x86_avx512_permutex.hpp */,
+				713F56C02BA20E6E003FF632 /* simde_x86_avx512_permutex2var.hpp */,
+				713F56C12BA20E6E003FF632 /* simde_x86_avx512_permutexvar.hpp */,
+				713F56C22BA20E6E003FF632 /* simde_x86_avx512_popcnt.hpp */,
+				713F56C32BA20E6E003FF632 /* simde_x86_avx512_range_round.hpp */,
+				713F56C42BA20E6E003FF632 /* simde_x86_avx512_range.hpp */,
+				713F56C52BA20E6E003FF632 /* simde_x86_avx512_rcp.hpp */,
+				713F56C62BA20E6E003FF632 /* simde_x86_avx512_reduce.hpp */,
+				713F56C72BA20E6E003FF632 /* simde_x86_avx512_rol.hpp */,
+				713F56C82BA20E6E003FF632 /* simde_x86_avx512_rolv.hpp */,
+				713F56C92BA20E6E003FF632 /* simde_x86_avx512_ror.hpp */,
+				713F56CA2BA20E6E003FF632 /* simde_x86_avx512_rorv.hpp */,
+				713F56CB2BA20E6E003FF632 /* simde_x86_avx512_round.hpp */,
+				713F56CC2BA20E6E003FF632 /* simde_x86_avx512_roundscale_round.hpp */,
+				713F56CD2BA20E6E003FF632 /* simde_x86_avx512_roundscale.hpp */,
+				713F56CE2BA20E6E003FF632 /* simde_x86_avx512_sad.hpp */,
+				713F56CF2BA20E6E003FF632 /* simde_x86_avx512_scalef.hpp */,
+				713F56D02BA20E6E003FF632 /* simde_x86_avx512_set.hpp */,
+				713F56D12BA20E6E003FF632 /* simde_x86_avx512_set1.hpp */,
+				713F56D22BA20E6E003FF632 /* simde_x86_avx512_set4.hpp */,
+				713F56D32BA20E6E003FF632 /* simde_x86_avx512_setone.hpp */,
+				713F56D42BA20E6E003FF632 /* simde_x86_avx512_setr.hpp */,
+				713F56D52BA20E6E003FF632 /* simde_x86_avx512_setr4.hpp */,
+				713F56D62BA20E6E003FF632 /* simde_x86_avx512_setzero.hpp */,
+				713F56D72BA20E6E003FF632 /* simde_x86_avx512_shldv.hpp */,
+				713F56D82BA20E6E003FF632 /* simde_x86_avx512_shuffle.hpp */,
+				713F56D92BA20E6E003FF632 /* simde_x86_avx512_sll.hpp */,
+				713F56DA2BA20E6E003FF632 /* simde_x86_avx512_slli.hpp */,
+				713F56DB2BA20E6E003FF632 /* simde_x86_avx512_sllv.hpp */,
+				713F56DC2BA20E6E003FF632 /* simde_x86_avx512_sqrt.hpp */,
+				713F56DD2BA20E6E003FF632 /* simde_x86_avx512_sra.hpp */,
+				713F56DE2BA20E6E003FF632 /* simde_x86_avx512_srai.hpp */,
+				713F56DF2BA20E6E003FF632 /* simde_x86_avx512_srav.hpp */,
+				713F56E02BA20E6E003FF632 /* simde_x86_avx512_srl.hpp */,
+				713F56E12BA20E6E003FF632 /* simde_x86_avx512_srli.hpp */,
+				713F56E22BA20E6E003FF632 /* simde_x86_avx512_srlv.hpp */,
+				713F56E32BA20E6E003FF632 /* simde_x86_avx512_store.hpp */,
+				713F56E42BA20E6E003FF632 /* simde_x86_avx512_storeu.hpp */,
+				713F56E52BA20E6E003FF632 /* simde_x86_avx512_sub.hpp */,
+				713F56E62BA20E6E003FF632 /* simde_x86_avx512_subs.hpp */,
+				713F56E72BA20E6E003FF632 /* simde_x86_avx512_ternarylogic.hpp */,
+				713F56E82BA20E6E003FF632 /* simde_x86_avx512_test.hpp */,
+				713F56E92BA20E6E003FF632 /* simde_x86_avx512_testn.hpp */,
+				713F56EA2BA20E6E003FF632 /* simde_x86_avx512_types.hpp */,
+				713F56EB2BA20E6E003FF632 /* simde_x86_avx512_unpackhi.hpp */,
+				713F56EC2BA20E6E003FF632 /* simde_x86_avx512_unpacklo.hpp */,
+				713F56ED2BA20E6E003FF632 /* simde_x86_avx512_xor.hpp */,
+				713F56EE2BA20E6E003FF632 /* simde_x86_avx512_xorsign.hpp */,
+				713F56EF2BA20E6E003FF632 /* simde_x86_avx512.hpp */,
+				713F56F02BA20E6E003FF632 /* simde_x86_clmul.hpp */,
+				713F56F12BA20E6E003FF632 /* simde_x86_f16c.hpp */,
+				713F56F22BA20E6E003FF632 /* simde_x86_fma.hpp */,
+				713F56F32BA20E6E003FF632 /* simde_x86_gfni.hpp */,
+				713F56F42BA20E6E003FF632 /* simde_x86_mmx.hpp */,
+				713F56F52BA20E6E003FF632 /* simde_x86_sse.hpp */,
+				713F56F62BA20E6E003FF632 /* simde_x86_sse2.hpp */,
+				713F56F72BA20E6E003FF632 /* simde_x86_sse3.hpp */,
+				713F56F82BA20E6E003FF632 /* simde_x86_sse4.1.hpp */,
+				713F56F92BA20E6E003FF632 /* simde_x86_sse4.2.hpp */,
+				713F56FA2BA20E6E003FF632 /* simde_x86_ssse3.hpp */,
+				713F56FB2BA20E6E003FF632 /* simde_x86_svml.hpp */,
+				713F56FC2BA20E6E003FF632 /* simde_x86_xop.hpp */,
+			);
+			path = Simde;
+			sourceTree = "<group>";
+		};
+		713F56FF2BA20E6E003FF632 /* CppSimde */ = {
+			isa = PBXGroup;
+			children = (
+				713F56FD2BA20E6E003FF632 /* Simde */,
+				713F56FE2BA20E6E003FF632 /* CppSimde.h */,
+			);
+			path = CppSimde;
+			sourceTree = "<group>";
+		};
+		713F57042BA20E6E003FF632 /* CppSimde */ = {
+			isa = PBXGroup;
+			children = (
+				713F55272BA20E6E003FF632 /* Build */,
+				713F56FF2BA20E6E003FF632 /* CppSimde */,
+				713F57002BA20E6E003FF632 /* .gitignore */,
+				713F57012BA20E6E003FF632 /* build.command */,
+				713F57022BA20E6E003FF632 /* CppSimde.xcodeproj */,
+				713F57032BA20E6E003FF632 /* README.md */,
+			);
+			name = CppSimde;
+			path = ../CppSimde;
+			sourceTree = "<group>";
+		};
+		713F57052BA20E6E003FF632 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				713F57092BA20E6E003FF632 /* CppSimde.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -58,6 +1104,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				713F55172BA20E28003FF632 /* CppUUIDv4.h in Headers */,
+				713F55212BA20E69003FF632 /* uuidv4_uuid.hpp in Headers */,
+				713F55202BA20E69003FF632 /* uuidv4_endianness.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +1120,7 @@
 				713F550F2BA20E28003FF632 /* Sources */,
 				713F55102BA20E28003FF632 /* Frameworks */,
 				713F55112BA20E28003FF632 /* Resources */,
+				713F570C2BA20E7C003FF632 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,12 +1156,28 @@
 			mainGroup = 713F55092BA20E28003FF632;
 			productRefGroup = 713F55142BA20E28003FF632 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 713F57052BA20E6E003FF632 /* Products */;
+					ProjectRef = 713F57022BA20E6E003FF632 /* CppSimde.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				713F55122BA20E28003FF632 /* CppUUIDv4 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		713F57092BA20E6E003FF632 /* CppSimde.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CppSimde.framework;
+			remoteRef = 713F57082BA20E6E003FF632 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		713F55112BA20E28003FF632 /* Resources */ = {
@@ -188,7 +1253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -242,13 +1307,14 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -267,6 +1333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 923Q86W73B;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -275,17 +1342,20 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.CppUUIDv4;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -300,6 +1370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 923Q86W73B;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -308,17 +1379,20 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzzet.package.CppUUIDv4;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;

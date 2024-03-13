@@ -2,7 +2,7 @@
 //  CppUUIDv4.h
 //  CppUUIDv4
 //
-//  Created by Undo Hatsune on 2024/03/14.
+//  Created by Undo Hatsune on 2024/03/10.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,3 +16,5 @@ FOUNDATION_EXPORT const unsigned char CppUUIDv4VersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CppUUIDv4/PublicHeader.h>
 
 
+#import <CppUUIDv4/uuidv4_endianness.hpp>
+#import <CppUUIDv4/uuidv4_uuid.hpp>
